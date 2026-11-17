@@ -377,6 +377,96 @@
     .main{padding:22px 16px 50px;}
   }
   h1 em,h2 em,h3 em,.hello em,.card em,.kicker em,.modal em{font-style:normal !important;}
+  /* ===== Mon lien bio ===== */
+  .lb-wrap{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:22px;align-items:start;}
+  .lb-left{display:flex;flex-direction:column;gap:16px;min-width:0;}
+  .lb-right{position:sticky;top:20px;}
+  .lb-h{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--bordeaux);margin-bottom:14px;}
+  .lb-link{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--ivoire);border:1px solid var(--sable);border-radius:14px;padding:10px 12px 10px 16px;}
+  .lb-link #lb-url{font-weight:700;color:var(--bordeaux);font-size:14px;}
+  .lb-link-btns{display:flex;gap:6px;flex-wrap:wrap;}
+  .lb-link-btns .btn-guide{padding:7px 13px;}
+  .lb-qr-btn{background:var(--sable)!important;border-color:var(--sable)!important;color:var(--bordeaux)!important;}
+  .lb-photo-row{display:flex;align-items:center;gap:16px;margin-bottom:16px;}
+  .lb-av{width:72px;height:72px;border-radius:50%;background:var(--bordeaux);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:22px;flex:none;}
+  .lb-f3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+  #v-lienbio textarea{width:100%;min-height:70px;border:1.5px solid var(--gris-perle);border-radius:12px;padding:10px 13px;font-family:'Inter',sans-serif;font-size:13px;color:var(--texte);resize:vertical;}
+  #v-lienbio textarea:focus{outline:none;border-color:var(--bordeaux);}
+  .lb-count{text-align:right;font-size:11px;color:var(--texte-doux);margin-top:3px;}
+  .lb-check{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;color:var(--texte-doux);margin-top:10px;cursor:pointer;}
+  .lb-check input{accent-color:var(--bordeaux);margin-top:2px;}
+  .lb-row{display:flex;align-items:center;gap:12px;padding:11px 4px;border-top:1px solid var(--gris-perle);background:#fff;}
+  .lb-row:first-child{border-top:none;}
+  .lb-row.drag{opacity:.4;} .lb-row.over{box-shadow:inset 0 2px 0 var(--bordeaux);}
+  .lb-grip{cursor:grab;color:#C9BFBA;font-size:14px;letter-spacing:-2px;user-select:none;}
+  .lb-ico{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;color:#fff;}
+  .lb-ico svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+  .lb-row .t{flex:1;min-width:0;} .lb-row .t b,.lb-row .t span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;} .lb-row .t b{font-size:13.5px;} .lb-row .t span{font-size:11.5px;color:var(--texte-doux);}
+  .lb-row .lb-mv{display:none;} .lb-row:hover .lb-mv{display:inline-block;}
+  .lb-tag{font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:999px;}
+  .lb-tag.c{background:#F6E9EC;color:var(--bordeaux);} .lb-tag.p{background:var(--vert-clair);color:var(--vert);} .lb-tag.tt{background:var(--sable);color:var(--noir);} .lb-tag.a{background:var(--gris-perle);color:var(--texte-doux);}
+  .lb-mv{border:none;background:none;color:var(--texte-doux);cursor:pointer;font-size:12px;padding:2px 4px;}
+  .lb-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;}
+  .lb-kpis div{background:var(--ivoire);border-radius:14px;padding:14px 10px;text-align:center;}
+  .lb-kpis b{display:block;font-family:'Playfair Display',serif;font-size:24px;} .lb-kpis span{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--texte-doux);}
+  .lb-bar{display:grid;grid-template-columns:150px 1fr 30px;align-items:center;gap:10px;font-size:12px;margin:6px 0;}
+  .lb-bar i{display:block;height:7px;border-radius:999px;background:var(--bordeaux);} .lb-bar em{font-style:normal;text-align:right;color:var(--texte-doux);}
+  .lb-phone{width:300px;margin:0 auto;border:10px solid var(--noir);border-radius:40px;overflow:hidden;box-shadow:0 20px 50px rgba(26,20,22,.18);background:var(--noir);}
+  .lb-screen{height:600px;overflow-y:auto;background:var(--ivoire);scrollbar-width:none;}
+  .lb-screen::-webkit-scrollbar{display:none;}
+  .lb-under{display:flex;gap:8px;justify-content:center;margin-top:14px;}
+  /* page publique */
+  .lbp{font-family:'Inter',sans-serif;color:var(--noir);padding-bottom:18px;}
+  .lbp-top{background:linear-gradient(180deg,var(--bordeaux),var(--bordeaux-dark));color:#fff;text-align:center;padding:14px 18px 22px;position:relative;}
+  .lbp-logo{height:20px;display:block;margin:2px auto 14px;}
+  .lbp-share{position:absolute;top:10px;right:12px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.16);border:none;color:#fff;cursor:pointer;font-size:13px;}
+  .lbp-av{width:78px;height:78px;border-radius:50%;margin:0 auto 10px;background:var(--ivoire);color:var(--bordeaux);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:24px;border:3px solid rgba(255,255,255,.7);background-size:cover;background-position:center;}
+  .lbp-nom{font-family:'Playfair Display',serif;font-weight:700;font-size:21px;line-height:1.15;}
+  .lbp-met{font-size:11.5px;color:var(--or);font-weight:600;margin-top:3px;}
+  .lbp-bio{font-size:12px;line-height:1.5;opacity:.92;margin:10px 4px 0;}
+  .lbp-soc{display:flex;gap:8px;justify-content:center;margin-top:12px;}
+  .lbp-soc span{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;}
+  .lbp-soc svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:1.8;}
+  .lbp-who{background:#fff;margin:-12px 12px 0;border-radius:16px;padding:12px;position:relative;box-shadow:0 6px 18px rgba(26,20,22,.08);}
+  .lbp-who h4{text-align:center;font-size:12.5px;margin:0 0 9px;}
+  .lbp-who .two{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+  .lbp-who button{border:1.5px solid var(--gris-perle);background:#fff;border-radius:12px;padding:8px 6px;cursor:pointer;font-family:'Inter',sans-serif;}
+  .lbp-who button b{display:block;font-size:12px;color:var(--noir);} .lbp-who button span{font-size:10px;color:var(--texte-doux);}
+  .lbp-who button.on{border-color:var(--bordeaux);background:#F9F1F3;} .lbp-who button.on b{color:var(--bordeaux);}
+  .lbp-sec{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--texte-doux);margin:16px 16px 8px;}
+  .lbp-b{display:flex;align-items:center;gap:10px;margin:0 12px 8px;background:#fff;border:1px solid var(--gris-perle);border-radius:14px;padding:10px 12px;cursor:pointer;}
+  .lbp-b .lb-ico{width:34px;height:34px;} .lbp-b .lb-ico svg{width:16px;height:16px;}
+  .lbp-b .t{flex:1;min-width:0;} .lbp-b .t b{display:block;font-size:12.5px;} .lbp-b .t span{font-size:10.5px;color:var(--texte-doux);line-height:1.35;display:block;}
+  .lbp-b .ar{color:var(--texte-doux);font-size:12px;}
+  .lbp-b.main{background:var(--bordeaux);border-color:var(--bordeaux);color:#fff;} .lbp-b.main .t span{color:rgba(255,255,255,.8);} .lbp-b.main .ar{color:#fff;} .lbp-b.main .lb-ico{background:rgba(255,255,255,.18)!important;}
+  .lbp-b.dark{background:var(--noir);border-color:var(--noir);color:#fff;} .lbp-b.dark .t span{color:rgba(255,255,255,.75);} .lbp-b.dark .ar{color:#fff;}
+  .lbp-card{margin:0 12px 8px;background:#fff;border:1px solid var(--gris-perle);border-radius:14px;padding:12px;}
+  .lbp-card h5{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--texte-doux);margin:0 0 6px;}
+  .lbp-co{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-top:1px solid var(--gris-perle);font-size:12px;}
+  .lbp-co:first-of-type{border-top:none;} .lbp-co small{display:block;font-size:10px;color:var(--texte-doux);}
+  .lbp-co button{border:1px solid var(--gris-perle);background:#fff;border-radius:999px;font-size:10.5px;padding:4px 9px;cursor:pointer;}
+  .lbp-dispo .lbp-day{display:flex;justify-content:space-between;font-size:11.5px;padding:5px 0;border-top:1px solid var(--gris-perle);} .lbp-dispo .lbp-day:first-of-type{border-top:none;}
+  .lbp-dispo .lbp-day.full{opacity:.5;} .lbp-dispo em{font-style:normal;color:var(--bordeaux);font-weight:700;}
+  .lbp-dispo .send{width:100%;margin-top:10px;border:none;border-radius:999px;background:var(--bordeaux);color:#fff;font-weight:700;padding:9px;cursor:pointer;font-size:12px;}
+  .lbp-form label{display:block;font-size:10.5px;font-weight:600;margin:8px 0 3px;}
+  .lbp-form input,.lbp-form select,.lbp-form textarea{width:100%;border:1px solid var(--gris-perle);border-radius:10px;padding:8px 10px;font-size:12px;font-family:'Inter',sans-serif;background:#fff;}
+  .lbp-form textarea{min-height:54px;resize:none;}
+  .lbp-form .ok{display:flex;gap:6px;font-size:10px;color:var(--texte-doux);margin-top:8px;align-items:flex-start;}
+  .lbp-form .ok input{width:auto;accent-color:var(--bordeaux);}
+  .lbp-form .send{width:100%;margin-top:10px;border:none;border-radius:999px;background:var(--bordeaux);color:#fff;font-weight:700;padding:10px;cursor:pointer;font-size:12.5px;}
+  .lbp-foot{text-align:center;font-size:10.5px;color:var(--texte-doux);margin-top:14px;line-height:1.6;}
+  .lbp-foot b{color:var(--bordeaux);}
+  .lb-ov{position:fixed;inset:0;background:rgba(26,20,22,.55);display:none;align-items:center;justify-content:center;z-index:300;padding:20px;}
+  .lb-ov.on{display:flex;}
+  .lb-pop{background:#fff;border-radius:22px;padding:24px;max-width:92vw;max-height:92vh;overflow:auto;position:relative;}
+  .lb-pop .x{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:none;background:var(--gris-perle);cursor:pointer;}
+  .lb-pop h3{font-family:'Playfair Display',serif;font-size:20px;margin:0 0 6px;} .lb-pop h3 em{font-style:normal;color:var(--bordeaux);}
+  .lb-pop .lb-screen{height:auto;max-height:78vh;width:340px;border-radius:24px;border:1px solid var(--gris-perle);}
+  .lb-qr{width:220px;height:220px;margin:14px auto;display:block;}
+  .lb-share{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;}
+  .lb-share button{border:1.5px solid var(--gris-perle);background:#fff;border-radius:12px;padding:12px;font-weight:600;font-size:13px;cursor:pointer;}
+  @media (max-width:1100px){.lb-wrap{grid-template-columns:1fr;}.lb-right{position:static;}}
+  @media (max-width:700px){.lb-f3{grid-template-columns:1fr;}.lb-kpis{grid-template-columns:repeat(2,1fr);}.lb-bar{grid-template-columns:110px 1fr 26px;}}
 </style>
 
 <style id="tsv-tabbar-css">
@@ -434,6 +524,7 @@
       <a data-view="avis"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8L6.6 19.7l1-6L3.2 9.4l6.1-.9z"/></svg>Avis<span class="badge">1</span></a>
       <div class="nav-label">Compte</div>
       <a data-view="mapage"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>Ma page</a>
+      <a data-view="lienbio"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>Mon lien bio<span class="badge" style="background:var(--or);color:var(--noir)">Nouveau</span></a>
       <a data-view="gains"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6.5c-.8-1.5-2.6-2.5-5-2.5-2.8 0-5 1.6-5 4s2.2 3.4 5 4 5 1.6 5 4-2.2 4-5 4c-2.4 0-4.2-1-5-2.5"/></svg>Gains &amp; affiliation</a>
       <a href="index.html#/v2"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>Retour au site</a>
     </nav>
@@ -1347,7 +1438,7 @@
     <section class="view" id="v-mapage">
       <div class="topbar">
         <div><h1 class="hello">Ma <em>page</em></h1><div class="hello-sub">Votre vitrine sur tsaravie : photo, bannière, présentation.</div></div>
-        <div class="top-actions"><button class="btn-guide js-guide">◎ Voir le guide</button><button class="top-cta js-save-page">Voir ma page publique</button></div>
+        <div class="top-actions"><button class="btn-guide js-guide">◎ Voir le guide</button><button class="btn-guide" onclick="go('lienbio')">Mon lien bio</button><button class="top-cta js-save-page">Voir ma page publique</button></div>
       </div>
 
       <div class="card" data-g="mapage-1" style="padding:0;overflow:hidden;margin-bottom:16px;">
@@ -1397,6 +1488,73 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- ========= MON LIEN BIO ========= -->
+    <section class="view" id="v-lienbio">
+      <div class="topbar">
+        <div><h1 class="hello">Mon lien <em>bio</em></h1><div class="hello-sub">Un seul lien pour Instagram, TikTok et votre signature d'e-mail. La page s'adapte selon que le visiteur est client ou pro.</div></div>
+        <div class="top-actions"><button class="btn-guide" id="lb-voir">Voir ma page</button><button class="top-cta" id="lb-publier">Publier les modifications</button></div>
+      </div>
+
+      <div class="lb-wrap">
+        <div class="lb-left">
+          <div class="card lb-card">
+            <div class="lb-h">Mon lien à partager</div>
+            <div class="lb-link"><span id="lb-url">tsaravie.fr/@mani-by-mani</span><span class="lb-link-btns"><button class="btn-guide" id="lb-copy">Copier</button><button class="btn-guide" id="lb-send">Envoyer</button><button class="btn-guide lb-qr-btn" id="lb-qr">QR code</button></span></div>
+            <div class="sub" style="margin-top:10px;">À mettre en bio Instagram et TikTok, sur votre carte de visite et en signature d'e-mail. Même lien partout : le visiteur choisit « Je réserve » ou « Je suis pro » et voit les bons boutons.</div>
+          </div>
+
+          <div class="card lb-card">
+            <div class="lb-h">Mon profil</div>
+            <div class="lb-photo-row">
+              <span class="lb-av" id="lb-av-ed">MM</span>
+              <div><div class="sub" style="margin-bottom:8px;"><b style="color:var(--texte)">Photo de profil</b> · JPG ou PNG, carrée, 2 Mo max</div>
+                <button class="btn-guide" id="lb-photo">Changer la photo</button> <button class="btn-guide" id="lb-logo">Utiliser mon logo</button></div>
+            </div>
+            <div class="lb-f3">
+              <div class="field"><label>Nom affiché</label><input id="lb-nom" value="Mani By Mani"></div>
+              <div class="field"><label>Métier · ville</label><input id="lb-metier" value="Onglerie · Paris 16e"></div>
+              <div class="field"><label>Adresse de ma page</label><input id="lb-slug" value="mani-by-mani"></div>
+            </div>
+            <div class="field" style="margin-top:12px;"><label>Micro bio · 160 caractères, vouvoiement</label><textarea id="lb-bio" maxlength="160">Pose gel et nail art signature depuis 2019. Je vous reçois dans mon salon à Paris 16e, du mardi au samedi.</textarea><div class="lb-count"><span id="lb-bio-n">0</span> / 160</div></div>
+            <div class="lb-f3" style="margin-top:12px;">
+              <div class="field"><label>Instagram</label><input id="lb-ig" value="@manibymani"></div>
+              <div class="field"><label>TikTok</label><input id="lb-tt" value="@manibymani"></div>
+              <div class="field"><label>Facebook</label><input id="lb-fb" placeholder="lien de la page"></div>
+            </div>
+          </div>
+
+          <div class="card lb-card">
+            <div class="lb-h">Partager mes horaires</div>
+            <div class="sub" style="margin-bottom:12px;">Le bloc « Mes dispos de la semaine » se met à jour tout seul depuis votre agenda. Choisissez ce que voient vos visiteurs, et publiez la même chose en story.</div>
+            <div class="chips" id="lb-dmode" style="margin:0 0 12px;"><button class="chip on" data-dm="slots">Créneaux restants</button><button class="chip" data-dm="hours">Horaires d'ouverture</button></div>
+            <button class="btn-ghost js-open-story">✦ Story horaires de la semaine</button>
+          </div>
+
+          <div class="card lb-card">
+            <div class="lb-h">Mes blocs</div>
+            <div class="sub" style="margin-bottom:10px;">Glissez pour changer l'ordre. Les blocs « auto » reprennent votre page, vos prestations et votre lien de parrainage : rien à coller.</div>
+            <div id="lb-blocks"></div>
+          </div>
+
+          <div class="card lb-card">
+            <div class="lb-h">Ma page en chiffres · 30 derniers jours</div>
+            <div class="lb-kpis">
+              <div><b>428</b><span>Visites</span></div><div><b>163</b><span>Clics</span></div><div><b>21</b><span>RDV pris via le lien</span></div><div><b>7</b><span>Messages reçus</span></div>
+            </div>
+            <div id="lb-bars"></div>
+            <div class="sub" style="margin-top:10px;">Chiffres d'exemple. Visiteurs déclarés : 81 % clients, 19 % pros.</div>
+          </div>
+        </div>
+
+        <div class="lb-right">
+          <div class="lb-phone"><div class="lb-screen" id="lb-screen"></div></div>
+          <div class="lb-under"><button class="btn-guide" id="lb-voir2">Voir ma page</button><button class="top-cta" id="lb-publier2">Publier</button></div>
+        </div>
+      </div>
+
+      <div class="lb-ov" id="lb-ov"><div class="lb-pop" id="lb-pop"></div></div>
     </section>
 
     <!-- ========= GAINS & AFFILIATION ========= -->
@@ -2509,6 +2667,126 @@
   new MutationObserver(render).observe(nav,{subtree:true,attributes:true,childList:true,characterData:true});
   render();
 })();
+</script>
+<script>
+/* ===== Mon lien bio ===== */
+(function(){
+  const $=s=>document.getElementById(s);
+  if(!$('v-lienbio'))return;
+  const I={
+    cal:'<path d="M4 6h16v14H4z"/><path d="M8 3v4M16 3v4M4 10h16"/>',
+    list:'<path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/>',
+    star:'<path d="M12 3l1.9 4.6L18 9.5l-4.1 1.9L12 16l-1.9-4.6L6 9.5l4.1-1.9z"/>',
+    gift:'<rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13"/>',
+    bag:'<path d="M5 8h14l-1.3 12H6.3z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
+    play:'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/>',
+    avis:'<path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8L6.6 19.7l1-6L3.2 9.4l6.1-.9z"/>',
+    join:'<path d="M12 5v14M5 12h14"/>',
+    meg:'<path d="M3 11l18-5v12L3 14v-3z"/>',
+    clock:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+    msg:'<path d="M21 12a8 8 0 0 1-8 8H5l-2 2V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/>',
+    ig:'<rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/>',
+    tt:'<path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.5 2.5 2.2 4 5 4"/>',
+    fb:'<path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/>'
+  };
+  const svg=k=>'<svg viewBox="0 0 24 24">'+I[k]+'</svg>';
+  let B=[
+    {id:'resa',t:'Réserver un soin',s:'Mes créneaux en direct, je confirme rapidement',a:'c',auto:1,on:1,ic:'cal',bg:'var(--bordeaux)',main:1,clics:58},
+    {id:'dispo',t:'Mes dispos de la semaine',s:'Créneaux restants, mis à jour depuis mon agenda',a:'c',auto:1,on:1,ic:'clock',bg:'var(--vert)',clics:24},
+    {id:'presta',t:'Mes prestations et tarifs',s:'Pose gel, nail art, beauté des pieds',a:'c',auto:1,on:1,ic:'list',bg:'var(--noir)',clics:31},
+    {id:'routine',t:'Composer ma routine · −10 %',s:'Plusieurs soins chez plusieurs pros près de chez vous',a:'c',auto:1,on:1,ic:'star',bg:'var(--or)',clics:14},
+    {id:'carte',t:'Offrir une carte cadeau',s:'Montant libre, valable chez moi',a:'c',auto:1,on:1,ic:'gift',bg:'var(--bordeaux)',clics:12},
+    {id:'shop',t:'Ma boutique',s:'Retrait au salon le jour de votre RDV',a:'c',auto:1,on:1,ic:'bag',bg:'var(--vert)',clics:9},
+    {id:'inspi',t:'Mes réalisations et reels',s:'Mes dernières poses sur tsaravie',a:'t',auto:1,on:1,ic:'play',bg:'var(--noir)',clics:17},
+    {id:'avis',t:'Mes avis clients · 4,9 ★',s:'38 avis vérifiés après rendez-vous',a:'t',auto:1,on:1,ic:'avis',bg:'var(--or)',clics:8},
+    {id:'join',t:'Rejoindre tsaravie',s:'−30 % sur votre 1er mois avec mon lien de parrainage',a:'p',auto:1,on:1,ic:'join',bg:'var(--bordeaux)',main:1,clics:6},
+    {id:'ep',t:'Mes annonces Entre pros',s:'Je recrute, je cherche des modèles, je loue ma table',a:'p',auto:1,on:0,ic:'meg',bg:'var(--vert)',clics:0},
+    {id:'chat',t:'M\'écrire sur tsaravie',s:'La discussion s\'ouvre dans la messagerie tsaravie',a:'t',auto:1,on:1,ic:'msg',bg:'var(--noir)',dark:1,clics:11}
+  ];
+  const TAG={c:['c','Client'],p:['p','Pro'],t:['tt','Tous']};
+  let who='c', photo=null, dm='slots';
+  const logo=(document.querySelector('.logo img')||{}).src||'';
+  const val=id=>($(id).value||'').trim();
+  const ini=()=>{const w=val('lb-nom').split(/\s+/).filter(Boolean);return w.length?(w[0][0]+(w.length>1?w[w.length-1][0]:'')).toUpperCase():'t';};
+  const url=()=>'tsaravie.fr/@'+(val('lb-slug')||'ma-page').toLowerCase().replace(/[^a-z0-9-]/g,'-');
+  function rows(){
+    $('lb-blocks').innerHTML=B.map((b,i)=>`<div class="lb-row" draggable="true" data-i="${i}"><span class="lb-grip" title="Glisser">⋮⋮</span><span class="lb-ico" style="background:${b.bg}">${svg(b.ic)}</span><span class="t"><b>${b.t}</b><span>${b.s}</span></span><span class="lb-tag ${TAG[b.a][0]}">${TAG[b.a][1]}</span>${b.auto?'<span class="lb-tag a">Auto</span>':''}<button class="lb-mv" data-up="${i}" title="Monter">▲</button><button class="lb-mv" data-dn="${i}" title="Descendre">▼</button><label class="toggle"><input type="checkbox" data-on="${i}" ${b.on?'checked':''}><span class="tr"></span></label></div>`).join('');
+    const rs=[...$('lb-blocks').children];let from=null;
+    rs.forEach(r=>{
+      r.addEventListener('dragstart',()=>{from=+r.dataset.i;r.classList.add('drag');});
+      r.addEventListener('dragend',()=>r.classList.remove('drag'));
+      r.addEventListener('dragover',e=>{e.preventDefault();r.classList.add('over');});
+      r.addEventListener('dragleave',()=>r.classList.remove('over'));
+      r.addEventListener('drop',e=>{e.preventDefault();r.classList.remove('over');const to=+r.dataset.i;if(from===null||from===to)return;const [m]=B.splice(from,1);B.splice(to,0,m);rows();prev();});
+    });
+    const bars=B.filter(b=>b.clics).sort((a,b)=>b.clics-a.clics).slice(0,6),mx=bars[0].clics;
+    $('lb-bars').innerHTML=bars.map(b=>`<div class="lb-bar"><span>${b.t.replace(/ ·.*/,'')}</span><i style="width:${Math.round(b.clics/mx*100)}%"></i><em>${b.clics}</em></div>`).join('');
+  }
+  $('lb-blocks').addEventListener('click',e=>{
+    const u=e.target.dataset.up,d=e.target.dataset.dn;
+    if(u!==undefined&&+u>0){[B[+u-1],B[+u]]=[B[+u],B[+u-1]];rows();prev();}
+    if(d!==undefined&&+d<B.length-1){[B[+d+1],B[+d]]=[B[+d],B[+d+1]];rows();prev();}
+  });
+  $('lb-blocks').addEventListener('change',e=>{const i=e.target.dataset.on;if(i!==undefined){B[+i].on=e.target.checked?1:0;prev();}});
+  function page(){
+    const vis=B.filter(b=>b.on&&(b.a==='t'||b.a===who));
+    const soc=[['ig','lb-ig'],['tt','lb-tt'],['fb','lb-fb']].filter(s=>val(s[1])).map(s=>`<span>${svg(s[0])}</span>`).join('');
+    const blk=b=>{
+      if(b.id==='chat')return `<div class="lbp-b dark" data-chat><span class="lb-ico" style="background:rgba(255,255,255,.14)">${svg(b.ic)}</span><span class="t"><b>Écrire à ${val('lb-nom')||'la pro'}</b><span>Dans la messagerie tsaravie : photos, questions, devis</span></span><span class="ar">›</span></div>`;
+      if(b.id==='dispo'){const D=dm==='slots'?[['Mar.','<em>2</em> · 11 h, 16 h 30'],['Mer.','complet',1],['Jeu.','<em>3</em> · 9 h 30, 14 h, 17 h'],['Ven.','complet',1],['Sam.','<em>2</em> · 10 h, 15 h 30']]:[['Mar.','10 h à 19 h'],['Mer.','10 h à 19 h'],['Jeu.','10 h à 19 h'],['Ven.','10 h à 19 h'],['Sam.','10 h à 18 h']];
+        return `<div class="lbp-card lbp-dispo"><h5>${dm==='slots'?'Il reste des places cette semaine':'Mes horaires d\'ouverture'}</h5>${D.map(d=>`<div class="lbp-day ${d[2]?'full':''}"><b>${d[0]}</b><span>${d[1]}</span></div>`).join('')}<button class="send" data-blk="resa">Réserver un créneau</button></div>`;}
+      return `<div class="lbp-b ${b.main?'main':''}" data-blk="${b.id}"><span class="lb-ico" style="background:${b.bg}">${svg(b.ic)}</span><span class="t"><b>${b.t}</b><span>${b.s}</span></span><span class="ar">›</span></div>`;
+    };
+    return `<div class="lbp"><div class="lbp-top">${logo?`<img class="lbp-logo" src="${logo}" alt="tsaravie">`:'<div style="font-family:Playfair Display,serif;font-weight:700;margin-bottom:12px">tsaravie</div>'}<button class="lbp-share" data-share title="Partager">↗</button>
+      <div class="lbp-av" style="${photo?`background-image:url(${photo});color:transparent`:''}">${ini()}</div>
+      <div class="lbp-nom">${val('lb-nom')||'Votre nom'}</div><div class="lbp-met">${val('lb-metier')}</div><div class="lbp-bio">${val('lb-bio')}</div><div class="lbp-soc">${soc}</div></div>
+      <div class="lbp-who"><h4>Vous êtes…</h4><div class="two"><button class="${who==='c'?'on':''}" data-who="c"><b>Un client</b><span>je réserve un soin</span></button><button class="${who==='p'?'on':''}" data-who="p"><b>Un pro</b><span>je rejoins tsaravie</span></button></div></div>
+      <div class="lbp-sec">${who==='c'?'Pour vous':'Pour votre activité'}</div>${vis.map(blk).join('')}
+      <div class="lbp-foot"><b>tsaravie</b> · La belle vie commence par vous.<br>Vous êtes pro ? <b>Créer ma page</b> · Mentions légales</div></div>`;
+  }
+  function prev(){
+    $('lb-url').textContent=url();
+    $('lb-bio-n').textContent=val('lb-bio').length;
+    $('lb-av-ed').textContent=ini();
+    $('lb-av-ed').style.cssText=photo?`background-image:url(${photo});background-size:cover;background-position:center;color:transparent`:'';
+    document.querySelectorAll('.lb-screen').forEach(s=>s.innerHTML=page());
+  }
+  ['lb-nom','lb-metier','lb-slug','lb-bio','lb-ig','lb-tt','lb-fb'].forEach(id=>$(id).addEventListener('input',prev));
+  $('lb-dmode').addEventListener('click',e=>{const b=e.target.closest('[data-dm]');if(!b)return;dm=b.dataset.dm;[...$('lb-dmode').children].forEach(x=>x.classList.toggle('on',x===b));prev();});
+  const msg=m=>(typeof pop==='function'?pop(m):alert(m));
+  const ov=$('lb-ov'),pp=$('lb-pop');
+  const open=h=>{pp.innerHTML='<button class="x" data-x>✕</button>'+h;ov.classList.add('on');};
+  ov.addEventListener('click',e=>{if(e.target===ov||e.target.dataset.x!==undefined)ov.classList.remove('on');});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')ov.classList.remove('on');});
+  function copy(t,m){try{navigator.clipboard.writeText(t);}catch(e){}msg(m);}
+  function qr(){
+    let s=0;for(const ch of url())s=(s*31+ch.charCodeAt(0))>>>0;
+    const r=()=>((s=(s*1103515245+12345)>>>0)>>16)&1,N=25,c=8.8;let h='';
+    const fp=(x,y)=>`<rect x="${x*c}" y="${y*c}" width="${7*c}" height="${7*c}" fill="#1A1416"/><rect x="${(x+1)*c}" y="${(y+1)*c}" width="${5*c}" height="${5*c}" fill="#fff"/><rect x="${(x+2)*c}" y="${(y+2)*c}" width="${3*c}" height="${3*c}" fill="#870022"/>`;
+    for(let y=0;y<N;y++)for(let x=0;x<N;x++){if((x<8&&y<8)||(x>16&&y<8)||(x<8&&y>16))continue;if(r())h+=`<rect x="${x*c}" y="${y*c}" width="${c}" height="${c}" fill="#1A1416"/>`;}
+    return `<svg class="lb-qr" viewBox="0 0 220 220"><rect width="220" height="220" fill="#fff"/>${h}${fp(0,0)}${fp(18,0)}${fp(0,18)}<rect x="88" y="88" width="44" height="44" rx="10" fill="#870022"/><text x="110" y="118" text-anchor="middle" font-family="Playfair Display,serif" font-weight="700" font-size="26" fill="#fff">t</text></svg>`;
+  }
+  $('lb-copy').onclick=()=>copy('https://'+url(),'Lien copié : '+url());
+  $('lb-send').onclick=()=>open(`<h3>Envoyer mon <em>lien</em></h3><div class="sub">${url()}</div><div class="lb-share"><button data-sh="WhatsApp">WhatsApp</button><button data-sh="SMS">SMS</button><button data-sh="e-mail">E-mail</button><button data-sh="Instagram">Copier pour Instagram</button></div>`);
+  $('lb-qr').onclick=()=>open(`<h3>Mon QR <em>code</em></h3><div class="sub">À imprimer sur votre carte de visite ou à poser au comptoir du salon.</div>${qr()}<div class="sub" style="text-align:center">${url()}</div><div class="lb-share"><button data-sh="PNG">Télécharger en PNG</button><button data-sh="PDF">Télécharger en PDF</button></div><div class="sub" style="margin-top:10px;font-size:11px">Aperçu d'exemple : le vrai QR code est généré par le site.</div>`);
+  const voir=()=>open(`<h3>Ma page <em>publique</em></h3><div class="sub" style="margin-bottom:12px">${url()}</div><div class="lb-screen">${page()}</div>`);
+  $('lb-voir').onclick=voir;$('lb-voir2').onclick=voir;
+  const pub=()=>msg('Modifications publiées sur '+url());
+  $('lb-publier').onclick=pub;$('lb-publier2').onclick=pub;
+  $('lb-photo').onclick=()=>{const i=document.createElement('input');i.type='file';i.accept='image/*';i.onchange=()=>{const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{photo=r.result;prev();msg('Photo mise à jour');};r.readAsDataURL(f);};i.click();};
+  $('lb-logo').onclick=()=>{photo=null;prev();msg('Votre logo de « Ma page » est utilisé');};
+  document.addEventListener('click',e=>{
+    const t=e.target.closest('[data-who],[data-chat],[data-blk],[data-share],[data-sh]');
+    if(!t||!t.closest('#v-lienbio'))return;
+    if(t.dataset.who){who=t.dataset.who;prev();if(ov.classList.contains('on'))voir();return;}
+    if(t.dataset.chat!==undefined){msg('Le visiteur arrive dans la messagerie tsaravie : son message apparaît dans votre onglet Messages');return;}
+    if(t.dataset.share!==undefined){copy('https://'+url(),'Lien de la page copié');return;}
+    if(t.dataset.sh){ov.classList.remove('on');msg(t.dataset.sh==='PNG'||t.dataset.sh==='PDF'?'QR code téléchargé ('+t.dataset.sh+')':'Lien prêt à envoyer par '+t.dataset.sh);return;}
+    if(t.dataset.blk){const b=B.find(x=>x.id===t.dataset.blk);msg('Le visiteur arrive sur : '+b.t);}
+  });
+  rows();prev();
+})();
+
 </script>
 </body>
 </html>
