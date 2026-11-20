@@ -583,6 +583,7 @@
               <button class="btn-ghost js-open-newrdv">+ Créer un rendez-vous</button>
               <button class="btn-ghost js-open-flyer">Importer un flyer dans mes services</button>
               <button class="btn-ghost js-open-story">✦ Story horaires de la semaine</button>
+              <button class="btn-ghost" onclick="go('lienbio')">Mon lien bio à partager</button>
             </div>
           </div>
           <div class="card">
@@ -1003,13 +1004,13 @@
       <div class="grid">
         <div class="col">
           <div class="card" data-g="services-1">
-            <div class="card-head"><div><h2>Catalogue</h2><div class="sub">Le bouton coulissant masque ou remet en ligne une prestation. La corbeille la supprime pour de bon.</div></div><button class="btn-ghost js-open-addsrv">+ Ajouter une prestation</button></div>
+            <div class="card-head"><div><h2>Catalogue</h2><div class="sub">Le bouton coulissant masque ou remet en ligne une prestation. Le crayon la modifie, la corbeille la supprime pour de bon.</div></div><button class="btn-ghost js-open-addsrv">+ Ajouter une prestation</button></div>
             <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input class="js-filter" placeholder="Rechercher une prestation…"></div>
-            <div class="srv"><span class="what"><b>Pose semi-permanent</b><span>75 min · Onglerie</span></span><span class="pill domi">À domicile OK</span><span class="price">35 €</span><label class="toggle" title="Visible par les clients · décochez pour masquer"><input type="checkbox" checked><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
-            <div class="srv"><span class="what"><b>Nail art signature</b><span>90 min · Onglerie</span></span><span class="pill domi">À domicile OK</span><span class="price">65 €</span><label class="toggle" title="Visible par les clients · décochez pour masquer"><input type="checkbox" checked><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
-            <div class="srv"><span class="what"><b>Pose gel + capsules</b><span>105 min · Onglerie</span></span><span class="price">55 €</span><label class="toggle" title="Masquée · cochez pour la remettre en ligne"><input type="checkbox"><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
-            <div class="srv"><span class="what"><b>Drainage lymphatique</b><span>3 variantes : jambes 60 € · ventre 50 € · corps entier 95 € · le client choisit la zone à la résa</span></span><span class="pill coll">Variantes</span><span class="price">dès 50 €</span><label class="toggle" title="Visible par les clients · décochez pour masquer"><input type="checkbox" checked><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
-            <div class="srv"><span class="what"><b>Cours auto-manucure</b><span>60 min · Atelier</span></span><span class="pill coll">Collectif · 6 places · 25 €/pers.</span><span class="price">25 €</span><label class="toggle" title="Masquée · cochez pour la remettre en ligne"><input type="checkbox"><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
+            <div class="srv"><span class="what"><b>Pose semi-permanent</b><span>75 min · Onglerie</span></span><span class="pill domi">À domicile OK</span><span class="price">35 €</span><label class="toggle" title="Visible par les clients · décochez pour masquer"><input type="checkbox" checked><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-editsrv" title="Modifier cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg></button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
+            <div class="srv"><span class="what"><b>Nail art signature</b><span>90 min · Onglerie</span></span><span class="pill domi">À domicile OK</span><span class="price">65 €</span><label class="toggle" title="Visible par les clients · décochez pour masquer"><input type="checkbox" checked><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-editsrv" title="Modifier cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg></button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
+            <div class="srv"><span class="what"><b>Pose gel + capsules</b><span>105 min · Onglerie</span></span><span class="price">55 €</span><label class="toggle" title="Masquée · cochez pour la remettre en ligne"><input type="checkbox"><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-editsrv" title="Modifier cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg></button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
+            <div class="srv"><span class="what"><b>Drainage lymphatique</b><span>3 variantes : jambes 60 € · ventre 50 € · corps entier 95 € · le client choisit la zone à la résa</span></span><span class="pill coll">Variantes</span><span class="price">dès 50 €</span><label class="toggle" title="Visible par les clients · décochez pour masquer"><input type="checkbox" checked><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-editsrv" title="Modifier cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg></button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
+            <div class="srv"><span class="what"><b>Cours auto-manucure</b><span>60 min · Atelier</span></span><span class="pill coll">Collectif · 6 places · 25 €/pers.</span><span class="price">25 €</span><label class="toggle" title="Masquée · cochez pour la remettre en ligne"><input type="checkbox"><span class="tr"></span></label><button class="btn-ko js-dup" title="Dupliquer ce service">⧉</button><button class="btn-ko js-editsrv" title="Modifier cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg></button><button class="btn-ko js-delsrv" title="Supprimer cette prestation"><svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-3px;"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button></div>
           </div>
         </div>
         <div class="col">
@@ -2787,6 +2788,38 @@
   rows();prev();
 })();
 
+</script>
+
+<script>
+/* ===== Modifier une prestation (crayon) ===== */
+(function(){
+  const ov=document.getElementById('ov-addsrv');if(!ov)return;
+  const kick=ov.querySelector('.kicker'),h3=ov.querySelector('h3'),sub=ov.querySelector('.msub'),ok=document.getElementById('as-ok');
+  const inNom=document.getElementById('as-nom'),inPrix=ov.querySelectorAll('.frais .field input')[1],selDur=ov.querySelectorAll('.frais .field select')[1],selCat=ov.querySelectorAll('.frais .field select')[0];
+  const T0={k:kick.innerHTML,h:h3.innerHTML,s:sub.innerHTML,o:ok.innerHTML};
+  let row=null;
+  document.querySelectorAll('.js-open-addsrv').forEach(b=>b.addEventListener('click',()=>{row=null;kick.innerHTML=T0.k;h3.innerHTML=T0.h;sub.innerHTML=T0.s;ok.innerHTML=T0.o;inNom.value='';inPrix.value='';},true));
+  document.addEventListener('click',e=>{
+    const b=e.target.closest('.js-editsrv');if(!b)return;
+    row=b.closest('.srv');
+    const nom=row.querySelector('.what b').textContent,meta=row.querySelector('.what span').textContent,prix=row.querySelector('.price').textContent;
+    kick.innerHTML='✦ Modifier la prestation';h3.innerHTML='Modifier <em>'+nom+'</em>';sub.innerHTML='Les changements s\'appliquent aux prochaines réservations. Les RDV déjà pris gardent leur prix.';ok.innerHTML='Enregistrer les modifications ✦';
+    inNom.value=nom;inPrix.value=prix;
+    const m=meta.match(/(\d+) min/);if(m)[...selDur.options].forEach(o=>o.selected=o.text===m[1]+' min');
+    const cat=(meta.split('·')[1]||'').trim();if(cat)[...selCat.options].forEach(o=>o.selected=o.text===cat);
+    ov.classList.add('open');
+  });
+  ok.addEventListener('click',e=>{
+    if(!row)return;
+    e.stopImmediatePropagation();
+    row.querySelector('.what b').textContent=inNom.value||row.querySelector('.what b').textContent;
+    if(inPrix.value)row.querySelector('.price').textContent=inPrix.value.replace(/\s*€?$/,' €');
+    const dur=selDur.value||selDur.options[selDur.selectedIndex].text,meta=row.querySelector('.what span');
+    if(/\d+ min/.test(meta.textContent))meta.textContent=meta.textContent.replace(/\d+ min/,dur);
+    ov.classList.remove('open');row=null;
+    if(typeof pop==='function')pop('Prestation modifiée · à jour sur votre fiche.');
+  },true);
+})();
 </script>
 </body>
 </html>

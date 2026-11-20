@@ -17381,6 +17381,7 @@ Je referai très  prochainement. </p></div><div class="avis-card"><div class="av
   function norm(h){try{const u=new URL(h,'https://x.fr');let p=u.pathname.replace(/\/$/,'')||'/v2';if(p==='/')p='/v2';return p+(u.hash==='#pro'?'#pro':'');}catch(e){return h}}
   function go(path,keepScroll){
     path=norm(path);
+    if(path==='/v2/inspirations'){location.href='tsaravie_Inspirations.html';return;}
     let key;
     if(path==='/v2')key='home_'+mode;
     else key=ROUTES[path];
