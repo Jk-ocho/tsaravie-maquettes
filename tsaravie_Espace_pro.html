@@ -1859,7 +1859,7 @@
         <div class="stat"><div class="num" id="ab-plan-num">Équipe</div><div class="lab" id="ab-plan-lab">Annuel · payé jusqu'au 14 mai 2027</div></div>
         <div class="stat"><div class="num" id="ab-next">601,80 €</div><div class="lab" id="ab-next-lab">Prochain prélèvement · 14 mai 2027</div></div>
         <div class="stat"><div class="num good" id="ab-saved">106,20 €</div><div class="lab">Économisés cette année grâce à l'annuel</div></div>
-        <div class="stat"><div class="num accent">11,70 €</div><div class="lab">Crédits parrainage à rembourser</div></div>
+        <div class="stat"><div class="num accent">11,70 € HT</div><div class="lab">Crédits parrainage à rembourser</div></div>
       </div>
 
       <div class="grid">
@@ -1870,7 +1870,7 @@
               <div><b id="ab-name">Équipe</b><span id="ab-desc">Agenda, page pro, boutique intégrée, mise en avant boostée, factures auto, stats avancées</span></div>
               <div class="ab-price"><b id="ab-price">601,80 €</b><span id="ab-per">/an · payé en une fois</span><span id="ab-eq" style="display:block">soit 33,15 €/mois</span></div>
             </div>
-            <div class="chips ab-period" style="margin:12px 0 6px;"><button class="chip" data-per="m">Mensuel · sans engagement</button><button class="chip on" data-per="y">Annuel −15 % · payé en une fois</button></div>
+            <div class="chips ab-period" style="margin:12px 0 6px;"><button class="chip" data-per="m">Mensuel · sans engagement</button><button class="chip on" data-per="y">Annuel −15 % · payé en une fois</button><button class="chip" data-per="y3">Annuel −10 % · payé en 3 fois</button></div>
             <div class="ab-save" id="ab-save"></div>
             <div class="ab-rows">
               <div class="ab-row"><span>Prochain prélèvement</span><b id="ab-nextrow">14 mai 2027 · 601,80 €</b></div>
@@ -1885,9 +1885,9 @@
 
           <div class="card" style="margin-top:16px;">
             <div class="card-head"><div><h2>Mes factures <em>tsaravie</em></h2><div class="sub">Une facture par prélèvement, en PDF.</div></div></div>
-            <div class="rdv"><span class="pp" style="background:var(--sable);color:var(--noir);">€</span><span class="what"><b>18 nov. 2026</b><span>Remboursement crédit parrainage · Lashes By Betty</span></span><span class="price" style="color:var(--vert)">−11,70 €</span><button class="btn-guide" data-ab="pdf">PDF</button></div>
-            <div class="rdv"><span class="pp" style="background:var(--sable);color:var(--noir);">€</span><span class="what"><b>14 mai 2026</b><span>Équipe · annuel, 12 mois payés</span></span><span class="price">601,80 €</span><button class="btn-guide" data-ab="pdf">PDF</button></div>
-            <div class="rdv"><span class="pp" style="background:var(--sable);color:var(--noir);">€</span><span class="what"><b>14 avr. 2026</b><span>Équipe · mensuel</span></span><span class="price">59 €</span><button class="btn-guide" data-ab="pdf">PDF</button></div>
+            <div class="rdv"><span class="pp" style="background:var(--sable);color:var(--noir);">€</span><span class="what"><b>18 nov. 2026</b><span>Remboursement crédit parrainage · Lashes By Betty</span></span><span class="price" style="color:var(--vert)">−11,70 € HT</span><button class="btn-guide" data-ab="pdf">PDF</button></div>
+            <div class="rdv"><span class="pp" style="background:var(--sable);color:var(--noir);">€</span><span class="what"><b>14 mai 2026</b><span>Équipe · annuel, 12 mois payés</span></span><span class="price">722,16 € TTC</span><button class="btn-guide" data-ab="pdf">PDF</button></div>
+            <div class="rdv"><span class="pp" style="background:var(--sable);color:var(--noir);">€</span><span class="what"><b>14 avr. 2026</b><span>Équipe · mensuel</span></span><span class="price">70,80 € TTC</span><button class="btn-guide" data-ab="pdf">PDF</button></div>
           </div>
         </div>
 
@@ -1896,10 +1896,10 @@
             <div class="card-head"><div><h2>Offrir un <em>abonnement</em></h2><div class="sub">À une consœur, une collaboratrice, une ancienne élève…</div></div></div>
             <div class="field"><label>Durée offerte</label><div class="chips" id="ab-gift-dur"><button class="chip">1 mois</button><button class="chip on">3 mois</button><button class="chip">6 mois</button></div></div>
             <div class="frais" style="margin-top:10px;">
-              <div class="field"><label>Formule</label><select id="ab-gift-plan"><option value="19">Classic · 19 €/mois</option><option value="39" selected>Classic + Boutique · 39 €/mois</option><option value="59">Équipe · 59 €/mois</option></select></div>
+              <div class="field"><label>Formule</label><select id="ab-gift-plan"><option value="19">Classic · 19 € HT/mois</option><option value="39" selected>Classic + Boutique · 39 € HT/mois</option><option value="59">Équipe · 59 € HT/mois</option></select></div>
               <div class="field"><label>E-mail de la bénéficiaire</label><input placeholder="prenom@exemple.fr"></div>
             </div>
-            <div class="ab-gift-tot">Total payé par vous : <b id="ab-gift-tot">117 €</b></div>
+            <div class="ab-gift-tot">Total payé par vous : <b id="ab-gift-tot">117 € HT · 140,40 € TTC</b></div>
             <div class="ab-note">Pour activer son cadeau, la bénéficiaire <b>enregistre sa carte bancaire</b>. Rien n'est prélevé pendant la période offerte. À la fin, son abonnement <b>continue automatiquement sur sa carte</b>, sauf si elle l'arrête avant.</div><div class="ab-note" style="border-color:var(--vert)">C'est aussi un parrainage : quand elle paie son <b>1er mois après la période offerte</b>, vous gagnez <b>30 % de ce mois</b> en crédit. Elle n'a pas les −30 % sur ce mois, puisqu'elle a déjà profité des mois offerts.</div>
             <button class="top-cta" style="width:100%;justify-content:center;margin-top:12px;" data-ab="gift">Offrir et payer</button>
           </div>
@@ -1910,8 +1910,8 @@
               <span style="font-weight:700;letter-spacing:.14em;font-size:15px;flex:1;">TSARA-MANI30</span>
               <button class="btn-guide js-copy-code" style="background:var(--ivoire);">Copier</button>
             </div>
-            <div class="rdv"><span class="pp">LB</span><span class="what"><b>Lashes By Betty</b><span>2e mois payé ✓ · crédit remboursé le 18 nov.</span></span><span class="pill coll">11,70 €</span></div>
-            <div class="rdv"><span class="pp">AN</span><span class="what"><b>Atelier Nacre</b><span>2e mois payé le 20 nov. · remboursement en cours</span></span><span class="pill wait">11,70 €</span></div>
+            <div class="rdv"><span class="pp">LB</span><span class="what"><b>Lashes By Betty</b><span>2e mois payé ✓ · crédit remboursé le 18 nov.</span></span><span class="pill coll">11,70 € HT</span></div>
+            <div class="rdv"><span class="pp">AN</span><span class="what"><b>Atelier Nacre</b><span>2e mois payé le 20 nov. · remboursement en cours</span></span><span class="pill wait">11,70 € HT</span></div>
             <div class="rdv"><span class="pp">SZ</span><span class="what"><b>Sophro Zen</b><span>1er mois à −30 % · crédit au 2e mois plein tarif</span></span><span class="pill off">À venir</span></div>
             <div class="rdv"><span class="pp">SC</span><span class="what"><b>Studio Céleste</b><span>Abonnement offert par vous · 3 mois · crédit à son 1er mois payé</span></span><span class="pill off">Offert</span></div>
             <div class="rdv"><span class="pp">GB</span><span class="what"><b>Glow By Aïcha</b><span>Inscrite le 1er nov. · essai offert</span></span><span class="pill off">Pas encore abonnée</span></div>
@@ -3328,18 +3328,19 @@
   const P={c:{n:'Classic',m:19,d:'Agenda, page pro, acomptes, codes promo, reels et TikToks, Entre pros'},b:{n:'Classic + Boutique',m:39,d:'Agenda, page pro, boutique intégrée, mise en avant boostée, factures auto, stats avancées'},e:{n:'Équipe',m:59,d:'Tout Classic + Boutique pour 3 membres, agenda partagé, support prioritaire'}};
   let plan='e',per='y',stopped=false;
   const eur=v=>(Math.round(v*100)/100).toFixed(2).replace('.',',').replace(',00','')+' €';
-  const price=(p,y)=>y==='y'?P[p].m*0.85:P[p].m;
+  const ht=v=>eur(v)+' HT',ttc=v=>eur(v*1.2)+' TTC';
+  const price=(p,y)=>y==='y'?P[p].m*0.85:y==='y3'?P[p].m*0.9:P[p].m;
   function paint(){
     const ls=document.querySelector('.logo-sub');if(ls)ls.textContent='Espace pro · '+{c:'Classic',b:'Boutique',e:'Équipe'}[plan];
     document.body.classList.remove('plan-c','plan-b','plan-e');document.body.classList.add('plan-'+plan);
-    const v=price(plan,per),Y=per==='y';
+    const v=price(plan,per),Y=per!=='m',T=per==='y3';
     $('ab-name').textContent=P[plan].n;$('ab-desc').textContent=P[plan].d;$('ab-plan-num').textContent=P[plan].n;
-    $('ab-price').textContent=Y?eur(v*12):eur(v);$('ab-per').textContent=Y?'/an · payé en une fois':'/mois · mensuel';$('ab-eq').textContent=Y?'soit '+eur(v)+'/mois':'';
-    $('ab-next').textContent=Y?eur(v*12):eur(v);$('ab-next-lab').textContent='Prochain prélèvement · '+(Y?'14 mai 2027':'14 déc.');
-    $('ab-nextrow').textContent=(Y?'14 mai 2027 · '+eur(v*12):'14 déc. · '+eur(v));
-    $('ab-plan-lab').textContent=stopped?'Arrêté · actif jusqu\'au '+(Y?'14 mai 2027':'14 déc.'):(Y?'Annuel · payé jusqu\'au 14 mai 2027':'Mensuel · sans engagement');
-    $('ab-save').innerHTML=Y?'Avec l\'annuel, vous économisez <b>'+eur(P[plan].m*12*0.15)+'</b> : <b>'+eur(v*12)+'</b> payés une fois pour l\'année, au lieu de '+eur(P[plan].m*12)+' en mensuel.':'Passez à l\'annuel : <b>'+eur(P[plan].m*12*0.85)+'</b> payés une fois pour 12 mois, soit <b>'+eur(P[plan].m*12*0.15)+'</b> économisés.';
-    $('ab-saved').textContent=Y?eur(P[plan].m*12*0.15):'0 €';
+    $('ab-price').textContent=Y?ht(v*12):ht(v);$('ab-per').textContent=Y?(T?'/an · payé en 3 fois':'/an · payé en une fois'):'/mois · mensuel';$('ab-eq').textContent=Y?'soit '+ttc(v*12)+' /an · '+ht(v)+' /mois':'soit '+ttc(v)+' /mois';
+    $('ab-next').textContent=Y?(T?ttc(v*4):ttc(v*12)):ttc(v);$('ab-next-lab').textContent='Prochain prélèvement · '+(Y&&!T?'14 mai 2027':'14 déc.');
+    $('ab-nextrow').textContent=(Y?(T?'14 déc. · '+ttc(v*4)+' (2e prélèvement sur 3)':'14 mai 2027 · '+ttc(v*12)):'14 déc. · '+ttc(v));
+    $('ab-plan-lab').textContent=stopped?'Arrêté · actif jusqu\'au '+(Y?'14 mai 2027':'14 déc.'):(Y?(T?'Annuel en 3 fois · engagé jusqu\'au 14 mai 2027':'Annuel · payé jusqu\'au 14 mai 2027'):'Mensuel · sans engagement');
+    $('ab-save').innerHTML=T?'Annuel payé en 3 fois : <b>'+ht(v*12)+'</b> ('+ttc(v*12)+') pour l\'année, en 3 prélèvements de '+ttc(v*4)+'. En payant en une fois, vous auriez <b>−15 %</b> au lieu de −10 %.':Y?'Avec l\'annuel, vous économisez <b>'+ht(P[plan].m*12*0.15)+'</b> : <b>'+ht(v*12)+'</b> ('+ttc(v*12)+') payés une fois pour l\'année, au lieu de '+ht(P[plan].m*12)+' en mensuel.':'Passez à l\'annuel : <b>'+ht(P[plan].m*12*0.85)+'</b> ('+ttc(P[plan].m*12*0.85)+') payés une fois pour 12 mois, soit <b>'+ht(P[plan].m*12*0.15)+'</b> économisés.';
+    $('ab-saved').textContent=Y?ht(P[plan].m*12*(T?0.1:0.15)):'0 €';
     $('ab-renew').textContent=stopped?'Arrêté':(Y?'Le 14 mai 2027, pour 12 mois':'Chaque mois, résiliable en 1 clic');
     document.querySelectorAll('.ab-period .chip').forEach(c=>c.classList.toggle('on',c.dataset.per===per));
     const st=$('ab-status');st.textContent=stopped?'Arrêté':'Actif';st.className='pill '+(stopped?'off':'coll');
@@ -3353,12 +3354,12 @@
   function change(){
     let p=plan,y=per;
     const draw=()=>{open(`<div class="kk">✦ Formule</div><h3>Changer de <em>formule</em></h3><div class="sb">L'annuel est payé en une fois pour 12 mois. Une montée en gamme est possible à tout moment (vous payez seulement la différence) ; une descente se fait au renouvellement.</div>
-      <div class="chips" style="margin-bottom:6px"><button class="chip ${y==='m'?'on':''}" data-y="m">Mensuel</button><button class="chip ${y==='y'?'on':''}" data-y="y">Annuel −15 %</button></div>
-      <div class="ab-plans">${Object.keys(P).map(k=>`<button class="${k===p?'on':''}" data-p="${k}"><span class="ab-img" style="background-image:url(${IM[k]})">${k===plan?'<i>Actuelle</i>':''}${k==='b'?'<i class="pop">Le plus populaire</i>':''}</span><b>${P[k].n}</b><span>${P[k].d}</span><em>${y==='y'?eur(price(k,y)*12)+'/an':eur(price(k,y))+'/mois'}</em>${y==='y'?`<span>soit ${eur(price(k,y))}/mois</span><span style="color:var(--vert)">−${eur(P[k].m*12*0.15)} sur l'année</span>`:''}</button>`).join('')}</div>
-      <div class="ab-acts"><button class="btn-ghost" data-x>Annuler</button><button class="btn-plain" data-ok>Valider ${P[p].n} · ${y==='y'?'annuel':'mensuel'}</button></div>`);
+      <div class="chips" style="margin-bottom:6px"><button class="chip ${y==='m'?'on':''}" data-y="m">Mensuel</button><button class="chip ${y==='y'?'on':''}" data-y="y">Annuel −15 %</button><button class="chip ${y==='y3'?'on':''}" data-y="y3">Annuel en 3 fois −10 %</button></div>
+      <div class="ab-plans">${Object.keys(P).map(k=>`<button class="${k===p?'on':''}" data-p="${k}"><span class="ab-img" style="background-image:url(${IM[k]})">${k===plan?'<i>Actuelle</i>':''}${k==='b'?'<i class="pop">Le plus populaire</i>':''}</span><b>${P[k].n}</b><span>${P[k].d}</span><em>${y!=='m'?ht(price(k,y)*12)+'/an':ht(price(k,y))+'/mois'}</em><span>${y!=='m'?ttc(price(k,y)*12)+'/an':ttc(price(k,y))+'/mois'}</span>${y==='y3'?`<span>3 prélèvements de ${ttc(price(k,y)*4)}</span>`:''}${y!=='m'?`<span style="color:var(--vert)">−${ht(P[k].m*12*(y==='y3'?0.1:0.15))} sur l'année</span>`:''}</button>`).join('')}</div>
+      <div class="ab-acts"><button class="btn-ghost" data-x>Annuler</button><button class="btn-plain" data-ok>Valider ${P[p].n} · ${y==='y'?'annuel':y==='y3'?'annuel en 3 fois':'mensuel'}</button></div>`);
       pp.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{p=b.dataset.p;draw();});
       pp.querySelectorAll('[data-y]').forEach(b=>b.onclick=()=>{y=b.dataset.y;draw();});
-      pp.querySelector('[data-ok]').onclick=()=>{plan=p;per=y;close();paint();say('Formule '+P[p].n+' ('+(y==='y'?'annuel':'mensuel')+') · appliquée au prochain prélèvement.');};};
+      pp.querySelector('[data-ok]').onclick=()=>{plan=p;per=y;close();paint();say('Formule '+P[p].n+' ('+(y==='y'?'annuel':y==='y3'?'annuel en 3 fois':'mensuel')+') · appliquée au prochain prélèvement.');};};
     draw();
   }
   function stop(step){
@@ -3370,16 +3371,16 @@
       <div class="ab-lose">· Votre page n'est plus visible sur tsaravie, et votre lien bio est désactivé<br>· Les clients ne peuvent plus réserver ni acheter dans votre boutique<br>· Vos crédits de parrainage non remboursés sont perdus<br>· Votre badge fondateur ✦ ne pourra pas être récupéré</div>
       <div class="ab-acts"><button class="btn-ghost" data-x>Je reste</button><button class="btn-ko" data-n>Continuer</button></div>`);
     if(step===3)open(`<div class="kk">✦ Arrêter mon abonnement</div><h3>Confirmer l'<em>arrêt</em></h3>
-      <div class="sb">${per==='y'?'Vous êtes en annuel : votre abonnement est <b>payé jusqu\'au 14 mai 2027</b>. Il reste actif jusqu\'à cette date, puis s\'arrête et ne se renouvelle pas.':'Vous êtes en mensuel : votre abonnement reste actif jusqu\'au <b>14 déc.</b>, puis s\'arrête. Plus aucun prélèvement.'}</div>
+      <div class="sb">${per==='y3'?'Vous êtes en annuel payé en 3 fois, avec un <b>engagement de 12 mois</b>. Le renouvellement est arrêté, mais les prélèvements restants de l\'année restent dus. Votre abonnement reste actif jusqu\'au <b>14 mai 2027</b>.':per==='y'?'Vous êtes en annuel : votre abonnement est <b>payé jusqu\'au 14 mai 2027</b>. Il reste actif jusqu\'à cette date, puis s\'arrête et ne se renouvelle pas.':'Vous êtes en mensuel : votre abonnement reste actif jusqu\'au <b>14 déc.</b>, puis s\'arrête. Plus aucun prélèvement.'}</div>
       <div class="sb">Vous pouvez le réactiver à tout moment, en un clic.</div>
       <div class="ab-acts"><button class="btn-ghost" data-x>Je reste finalement</button><button class="btn-ko" data-ok>Confirmer l'arrêt</button></div>`);
     const n=pp.querySelector('[data-n]');if(n)n.onclick=()=>stop(step+1);
-    const o=pp.querySelector('[data-ok]');if(o)o.onclick=()=>{stopped=true;close();paint();say('Abonnement arrêté · actif jusqu\'au '+(per==='y'?'14 mai 2027':'14 déc.')+'. Un e-mail de confirmation vous est envoyé.');};
+    const o=pp.querySelector('[data-ok]');if(o)o.onclick=()=>{stopped=true;close();paint();say('Abonnement arrêté · actif jusqu\'au '+(per!=='m'?'14 mai 2027':'14 déc.')+'. Un e-mail de confirmation vous est envoyé.');};
   }
-  const giftTot=()=>{const d=+(document.querySelector('#ab-gift-dur .on')||{textContent:'3'}).textContent.split(' ')[0],m=+$('ab-gift-plan').value;$('ab-gift-tot').textContent=eur(d*m);};
+  const giftTot=()=>{const d=+(document.querySelector('#ab-gift-dur .on')||{textContent:'3'}).textContent.split(' ')[0],m=+$('ab-gift-plan').value;$('ab-gift-tot').textContent=ht(d*m)+' · '+ttc(d*m);};
   document.querySelectorAll('#ab-gift-dur .chip').forEach(c=>c.addEventListener('click',()=>{document.querySelectorAll('#ab-gift-dur .chip').forEach(x=>x.classList.toggle('on',x===c));giftTot();}));
   $('ab-gift-plan').addEventListener('change',giftTot);
-  document.querySelectorAll('.ab-period .chip').forEach(c=>c.addEventListener('click',()=>{if(c.dataset.per===per)return;if(c.dataset.per==='y'){per='y';paint();say('Passage à l\'annuel · −15 %, 12 mois payés en une fois au prochain prélèvement.');}else{say('Retour au mensuel possible au renouvellement (14 mai 2027) : votre année est déjà payée.');}}));
+  document.querySelectorAll('.ab-period .chip').forEach(c=>c.addEventListener('click',()=>{if(c.dataset.per===per)return;if(c.dataset.per==='y'||c.dataset.per==='y3'){per=c.dataset.per;paint();say(per==='y'?'Annuel · −15 %, 12 mois payés en une fois au prochain prélèvement.':'Annuel en 3 fois · −10 %, 3 prélèvements sur les 3 premiers mois, engagement 12 mois.');}else{say('Retour au mensuel possible au renouvellement (14 mai 2027) : votre année est déjà payée.');}}));
   document.addEventListener('click',e=>{
     const b=e.target.closest('#v-gains [data-ab]');if(!b)return;e.preventDefault();
     const a=b.dataset.ab;
@@ -3434,7 +3435,7 @@
       <div class="field" style="margin-top:10px"><label>Rôle</label><div class="chips" id="tm-role">${ROLES.map((r,i)=>`<button class="chip ${(pre.r||'Collaborateur')===r?'on':''}">${r}</button>`).join('')}</div></div>
       <div class="field" style="margin-top:10px"><label>Prestations qu'il ou elle réalise</label><div class="chips">${['Pose gel','Nail art','Coupe','Brushing','Tresses','Coupe homme','Barbe','Soin visage'].map(p=>`<button class="chip multi ${(pre.p||[]).includes(p)?'on':''}">${p}</button>`).join('')}</div></div>
       <div class="field" style="margin-top:10px"><label>Couleur dans l'agenda</label><div class="tm-colors">${['#870022','#2E7D5E','#D4AF37','#1A1416','#96705C'].map((c,i)=>`<button style="background:${c}" class="${i===1?'on':''}"></button>`).join('')}</div></div>
-      ${pre.n?'':'<div class="ab-note">Votre formule inclut 3 membres. Celui-ci est le <b>5e</b> : <b>+5 €/mois</b> à partir du prochain prélèvement.</div>'}
+      ${pre.n?'':'<div class="ab-note">Votre formule inclut 3 membres. Celui-ci est le <b>5e</b> : <b>+5 € HT/mois</b> (6 € TTC) à partir du prochain prélèvement.</div>'}
       <div class="ab-acts"><button class="btn-ghost" data-x>Annuler</button><button class="btn-plain" data-ok>${pre.n?'Enregistrer':'Envoyer l\'invitation'}</button></div>`);
     pp.querySelectorAll('.chips').forEach(g=>g.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;if(c.classList.contains('multi'))c.classList.toggle('on');else g.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x===c));}));
     pp.querySelector('.tm-colors').addEventListener('click',e=>{const c=e.target.closest('button');if(!c)return;pp.querySelectorAll('.tm-colors button').forEach(x=>x.classList.toggle('on',x===c));});
