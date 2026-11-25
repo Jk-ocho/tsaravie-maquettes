@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta name="robots" content="noindex,nofollow">
-<meta charset="UTF-8">
+<head>
+<meta charset="UTF-8"><meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>tsaravie · Maquette espace client v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,7 +82,7 @@
   .empty .btn-ghost{margin-top:12px;}
 
   .deadline{margin:10px 0 4px;padding:10px 14px;border-radius:12px;background:var(--sable,#EDE4DA);font-size:12.5px;color:var(--texte);line-height:1.45;}
-  .deadline.late{background:#F6E3E3;}
+  .deadline.late{background:#EDE4DA;}
   .modal textarea{width:100%;border:1.5px solid var(--gris-perle);border-radius:12px;padding:10px 12px;font-family:'Inter',sans-serif;font-size:13px;background:#fff;resize:vertical;}
   .choice{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 4px;}
   .choice div{flex:1;min-width:180px;border:1.5px solid var(--gris-perle);border-radius:14px;padding:12px 14px;cursor:pointer;background:#fff;font-size:13px;}
@@ -99,7 +99,7 @@
   /* Lignes RDV */
   .rdv{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--gris-perle);}
   .rdv:last-child{border-bottom:none;}
-  .rdv .pp{width:40px;height:40px;border-radius:50%;flex:none;background:linear-gradient(135deg,#E8C4B8,#C98F7F);display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:700;color:#fff;font-size:14px;}
+  .rdv .pp{width:40px;height:40px;border-radius:50%;flex:none;background:linear-gradient(135deg,#2E7D5E,#12201B);display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:700;color:#fff;font-size:14px;}
   .rdv .what{min-width:0;}
   .rdv .what b{display:block;font-size:13.5px;color:var(--noir);}
   .rdv .what span{font-size:12px;color:var(--texte-doux);}
@@ -137,7 +137,7 @@
   /* Favoris */
   .fav{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--gris-perle);}
   .fav:last-child{border-bottom:none;}
-  .fav .pp{width:42px;height:42px;border-radius:50%;flex:none;background:linear-gradient(135deg,#E8C4B8,#C98F7F);display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:700;color:#fff;font-size:15px;}
+  .fav .pp{width:42px;height:42px;border-radius:50%;flex:none;background:linear-gradient(135deg,#2E7D5E,#12201B);display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:700;color:#fff;font-size:15px;}
   .fav .who b{display:block;font-size:14px;color:var(--noir);}
   .fav .who span{font-size:12px;color:var(--texte-doux);}
   .fav .note{margin-left:auto;font-weight:700;font-size:13px;display:flex;align-items:center;gap:4px;}
@@ -150,7 +150,7 @@
   .mood .m{border-radius:16px;height:130px;position:relative;overflow:hidden;cursor:pointer;transition:transform .15s;}
   .mood .m:hover{transform:translateY(-2px);}
   .mood .m span{position:absolute;left:10px;bottom:9px;color:#fff;font-size:11.5px;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.4);}
-  .mood .m1{background:linear-gradient(140deg,#E8C4B8,#C98F7F);}
+  .mood .m1{background:linear-gradient(140deg,#2E7D5E,#12201B);}
   .mood .m2{background:linear-gradient(140deg,#EDE4DA,#D4AF3766);}
   .mood .m3{background:linear-gradient(140deg,#D4E8DE,#2E7D5E99);}
   .mood .m4{background:linear-gradient(140deg,#F0EAE6,#D4AF3788);}
@@ -246,7 +246,7 @@
   /* Annonces : cartes façon Entre pros */
   .ann.ocard{padding:0;overflow:hidden;gap:0;}
   .otype{padding:8px 18px;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;}
-  .otype.model{background:#F6EEF0;color:var(--bordeaux);}
+  .otype.model{background:#F3EEEA;color:var(--bordeaux);}
   .otype.offer{background:var(--noir);color:var(--or);}
   .otype.new{background:var(--vert-clair);color:var(--vert);}
   .obody{padding:16px 18px 18px;}
@@ -373,7 +373,7 @@
   .lb-row .t{flex:1;min-width:0;} .lb-row .t b,.lb-row .t span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;} .lb-row .t b{font-size:13.5px;} .lb-row .t span{font-size:11.5px;color:var(--texte-doux);}
   .lb-row .lb-mv{display:none;} .lb-row:hover .lb-mv{display:inline-block;}
   .lb-tag{font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:999px;}
-  .lb-tag.c{background:#F6E9EC;color:var(--bordeaux);} .lb-tag.p{background:var(--vert-clair);color:var(--vert);} .lb-tag.tt{background:var(--sable);color:var(--noir);} .lb-tag.a{background:var(--gris-perle);color:var(--texte-doux);}
+  .lb-tag.c{background:#F3EEEA;color:var(--bordeaux);} .lb-tag.p{background:var(--vert-clair);color:var(--vert);} .lb-tag.tt{background:var(--sable);color:var(--noir);} .lb-tag.a{background:var(--gris-perle);color:var(--texte-doux);}
   .lb-mv{border:none;background:none;color:var(--texte-doux);cursor:pointer;font-size:12px;padding:2px 4px;}
   .lb-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;}
   .lb-kpis div{background:var(--ivoire);border-radius:14px;padding:14px 10px;text-align:center;}
@@ -401,7 +401,7 @@
   .lbp-who .two{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
   .lbp-who button{border:1.5px solid var(--gris-perle);background:#fff;border-radius:12px;padding:8px 6px;cursor:pointer;font-family:'Inter',sans-serif;}
   .lbp-who button b{display:block;font-size:12px;color:var(--noir);} .lbp-who button span{font-size:10px;color:var(--texte-doux);}
-  .lbp-who button.on{border-color:var(--bordeaux);background:#F9F1F3;} .lbp-who button.on b{color:var(--bordeaux);}
+  .lbp-who button.on{border-color:var(--bordeaux);background:#F3EEEA;} .lbp-who button.on b{color:var(--bordeaux);}
   .lbp-sec{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--texte-doux);margin:16px 16px 8px;}
   .lbp-b{display:flex;align-items:center;gap:10px;margin:0 12px 8px;background:#fff;border:1px solid var(--gris-perle);border-radius:14px;padding:10px 12px;cursor:pointer;}
   .lbp-b .lb-ico{width:34px;height:34px;} .lbp-b .lb-ico svg{width:16px;height:16px;}
@@ -459,7 +459,7 @@
   .qz .qs{text-align:center;color:var(--texte-doux);font-size:14px;margin-bottom:24px;}
   .qz-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
   .qz-card{border:2px solid var(--gris-perle);background:#fff;border-radius:18px;padding:18px 16px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;transition:border-color .15s,transform .15s;}
-  .qz-card:hover{transform:translateY(-2px);} .qz-card.on{border-color:var(--bordeaux);background:#F9F1F3;}
+  .qz-card:hover{transform:translateY(-2px);} .qz-card.on{border-color:var(--bordeaux);background:#F3EEEA;}
   .qz-card .e{font-size:22px;display:block;margin-bottom:8px;color:var(--bordeaux);} .qz-card b{display:block;font-size:14px;margin-bottom:4px;color:var(--noir);} .qz-card span{font-size:12px;color:var(--texte-doux);}
   .qz-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
   .qz-tile{position:relative;aspect-ratio:1;border-radius:18px;overflow:hidden;cursor:pointer;border:none;padding:0;background-size:cover;background-position:center;}
@@ -533,7 +533,19 @@
     .more-grid .dot{position:absolute;top:8px;right:10px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:var(--bordeaux);color:#fff;font-size:9.5px;font-weight:700;display:flex;align-items:center;justify-content:center;}
   }
 </style>
-</head>
+<style id="rt-css">
+.rdv .what .rest{display:block;margin-top:3px;font-size:12.5px;color:#2E7D5E;font-weight:600}.rdv .what .rest b{color:#1A1A1A;display:inline}.rt-pro .pp{width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:#EDE4DA;color:#1A1A1A;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.rt-box{border:1px solid #EDE4DA;border-radius:18px;padding:14px;margin-top:14px;background:#fff}
+.rt-h{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px}.rt-h b{display:block;font-family:'Playfair Display',serif;font-size:17px}.rt-h span:not(.pill){font-size:12.5px;color:#6b6b6b}
+.rt-pro{display:flex;gap:10px;padding:10px 0;border-top:1px solid #F1ECE7}.rt-w{flex:1;min-width:0}.rt-w>b{display:block;font-size:14px}.rt-w>span{display:block;font-size:12.5px;color:#6b6b6b}
+.rt-addr{display:block;font-size:12px;color:#1A1A1A;margin-top:2px}
+.rt-pay{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0 4px}.rt-pay span{font-size:12px;background:#FAF7F5;border:1px solid #EDE4DA;border-radius:99px;padding:4px 9px;color:#555}.rt-pay b{color:#1A1A1A}
+.rt-pay .rt-due{background:#E8F3ED;border-color:#CFE5D8;color:#2E7D5E}.rt-pay .rt-zero{background:#fff;color:#2E7D5E}
+.rt-w small{font-size:11.5px;color:#6b6b6b}
+.rt-tot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0}.rt-tot>div{background:#FAF7F5;border-radius:12px;padding:9px 10px}.rt-tot span{display:block;font-size:11.5px;color:#6b6b6b}.rt-tot b{font-size:16px}.rt-tot .due{background:#12201B;color:#fff}.rt-tot .due span,.rt-tot .due small{color:rgba(255,255,255,.75)}.rt-tot small{display:block;font-size:11px}
+@media (max-width:700px){#v-rdv .rdv{flex-wrap:wrap;row-gap:8px}#v-rdv .rdv .what{flex:1 1 calc(100% - 56px);min-width:0}#v-rdv .rdv .price{margin-left:50px}}
+@media (max-width:600px){.rt-tot{grid-template-columns:1fr 1fr}.rt-tot .due{grid-column:1/-1}}
+</style><style id="tsv-fav-fix">@media (max-width:600px){.fav{flex-wrap:wrap}.fav .note{margin-left:auto}}</style></head>
 <body>
 
   <aside class="sidebar">
@@ -740,13 +752,14 @@
 
       <div class="card" style="margin-bottom:16px;">
         <div class="tabs" id="rdvtabs">
-          <button class="tab on" data-sub="avenir">À venir<span class="n">1</span></button>
+          <button class="tab on" data-sub="avenir">À venir<span class="n">2</span></button>
           <button class="tab" data-sub="passes">Passés<span class="n">48</span></button>
           <button class="tab" data-sub="annules">Annulés<span class="n">27</span></button>
         </div>
         <div class="subview on" id="s-avenir">
-          <div class="rdv" id="rdv-next"><span class="pp">M</span><span class="what"><b>Pose semi-permanent</b><span>Mani By Mani · jeu. 15 octobre · 14 h · acompte 10,50 € réglé</span></span><span class="price">35 €</span><span class="pill ok">Confirmé</span><button class="re js-open-report">Reporter</button><button class="re js-open-cancelc" style="color:#870022;border-color:#870022;">Annuler</button></div>
+          <div class="rdv" id="rdv-next"><span class="pp">M</span><span class="what"><b>Pose semi-permanent</b><span>Mani By Mani · jeu. 15 octobre · 14 h · acompte 10,50 € réglé</span><span class="rest">Reste à régler sur place : <b>24,50 €</b> · carte ou espèces</span></span><span class="price">35 €</span><span class="pill ok">Confirmé</span><button class="re js-open-report">Reporter</button><button class="re js-open-cancelc" style="color:#870022;border-color:#870022;">Annuler</button></div>
           <div class="deadline" id="rdv-deadline">Report ou annulation sans frais possible <b>jusqu'au mer. 14 octobre, 14 h</b> (délai de 24 h fixé par Mani By Mani). Passé ce délai, un report compte comme une annulation et l'acompte est conservé.</div>
+          <div class="rt-box" id="rt-next"><div class="rt-h"><div><b>Ma routine Glow · 3 pros</b><span>sam. 28 et dim. 29 novembre · −10 % sur l'ensemble</span></div><span class="pill ok">Confirmée</span></div><div class="rt-pro"><span class="pp">M</span><div class="rt-w"><b>Mani By Mani</b><span>Pose gel · sam. 28 nov. · 10 h · au salon</span><div class="rt-pay"><span>Prix routine <b>40,50 €</b></span><span>Payé en ligne <b>12,15 € (acompte 30 %)</b></span><span class="rt-due">Sur place <b>28,35 €</b></span></div><small>À régler chez Mani By Mani : carte ou espèces</small></div></div><div class="rt-pro"><span class="pp">P</span><div class="rt-w"><b>Petra Beauty</b><span>Rehaussement de cils · sam. 28 nov. · 14 h · au salon</span><div class="rt-pay"><span>Prix routine <b>49,50 €</b></span><span>Payé en ligne <b>49,50 € (total en ligne)</b></span><span class="rt-zero">Tout est réglé</span></div><small>Rien à payer sur place</small></div></div><div class="rt-pro"><span class="pp">J</span><div class="rt-w"><b>Jemy Beauty and Body</b><span>Drainage lymphatique · dim. 29 nov. · 11 h · à domicile</span><span class="rt-addr">12 rue des Lilas, 78000 Versailles</span><div class="rt-pay"><span>Prix routine <b>82 €</b></span><span>Payé en ligne <b>20 € (acompte fixe)</b></span><span class="rt-due">Sur place <b>62 €</b></span></div><small>À régler chez Jemy : espèces uniquement · frais de déplacement 10 € inclus</small></div></div><div class="rt-tot"><div><span>Total routine</span><b>172 €</b></div><div><span>Payé en ligne</span><b>81,65 €</b></div><div class="due"><span>Reste à régler sur place</span><b>90,35 €</b><small>chez 2 pros sur 3</small></div></div><div class="deadline">Chaque pro garde ses propres règles : modes de paiement, acompte et délai d'annulation. Si vous annulez un soin et que la routine passe sous 3 pros, la remise de −10 % ne s'applique plus. Si c'est une pro qui annule, vous gardez la remise : on vous propose de reporter le soin chez elle ou de le réserver chez une autre pro.</div></div>
           <div class="empty" style="display:none;">
             Aucun rendez-vous à venir.<br>
             <a class="btn-ghost" href="index.html#/v2/recherche">✦ Trouver un pro</a>
@@ -1457,6 +1470,124 @@
   if(pc)pc.insertAdjacentHTML('beforeend','<button class="btn-ghost" onclick="TSV_quiz()">Refaire le quiz de bienvenue</button>');
   /* Arrivée par l'e-mail d'invitation : quiz affiché tout de suite */
   if(/bienvenue/.test(location.hash))setTimeout(()=>TSV_quiz(),300);
+})();
+
+</script>
+<script id="tsv-guide2-js">
+window.TSV_GUIDE_BTN='tsv-gbtn';
+window.TSV_GUIDES={
+  dash:[
+    {h:'Votre prochain',t:'Votre prochain rendez-vous',x:'Rappels automatiques 24 h et 1 h avant. Reporter ou annuler se fait depuis Mes RDV, dans le délai fixé par la pro.'},
+    {s:'#v-dash .card.routine',t:'Ma routine',x:'Réservez des soins chez 3 à 4 pros différentes : −10 % sur l\'ensemble.'},
+    {h:'Vos dernières',t:'Re-réserver',x:'Vos dernières prestations, à re-réserver en un geste.'},
+    {h:'Vos pros',t:'Vos pros favorites',x:'Accès direct à leur page pour prendre RDV.'},
+    {s:'#v-dash .card.trust',t:'Votre profil de confiance',x:'Ponctualité, avis, fidélité : vos badges sont visibles par les pros.'}
+  ],
+  ambassadeur:[
+    {s:'#v-ambassadeur .am-stats',t:'Votre cagnotte',x:'10 % du 2e mois d\'abonnement de chaque pro inscrite grâce à vous, utilisable sur n\'importe quelle réservation pendant 6 mois.'},
+    {h:'Mon lien à partager',t:'Votre lien',x:'Partagez-le en story, par message ou en QR code.'},
+    {h:'Ma cagnotte',t:'Historique de la cagnotte',x:'Chaque gain, chaque utilisation et sa date d\'expiration.'},
+    {h:'Mes blocs',t:'Votre page',x:'Choisissez et ordonnez les blocs : pros préférées, routine, coups de cœur.'}
+  ],
+  rdv:[
+    {tab:'À venir',s:'#rdv-next',t:'Vos RDV à venir',x:'Pour chaque RDV : ce qui est déjà payé et ce qui reste à régler sur place, avec les moyens acceptés par la pro.'},
+    {tab:'À venir',s:'#rt-next',t:'Votre routine',x:'Le détail par pro : prix, payé en ligne, reste sur place. Si une pro annule, vous gardez votre remise et on vous propose un report.'},
+    {tab:'À venir',s:'#rdv-deadline',t:'Reporter ou annuler',x:'Sans frais jusqu\'au délai fixé par la pro. Après, l\'acompte est conservé.'},
+    {tab:'Passés',s:'#s-passes',t:'Vos RDV passés',x:'Tout votre historique, à re-réserver.'},
+    {h:'Mes alertes',t:'Alertes créneaux',x:'Soyez prévenue dès qu\'un créneau se libère chez une pro complète.'}
+  ],
+  routine:[
+    {s:'#v-routine .card.routine',t:'Votre routine en cours',x:'Les soins déjà réservés et ceux qu\'il reste à prendre.'},
+    {h:'Routines passées',t:'Routines passées',x:'Rejouez une routine qui vous a plu.'},
+    {h:'Comment ça marche',t:'Comment ça marche',x:'De 3 à 4 pros différentes, 25 € minimum par pro : −10 % sur l\'ensemble.'}
+  ],
+  favoris:[
+    {h:'Vos pros',t:'Vos favoris',x:'Prenez RDV, ou créez une alerte créneau si c\'est complet.'},
+    {h:'Déjà consultées',t:'Déjà consultées',x:'Les pros vues récemment, à ajouter en favori.'}
+  ],
+  inspi:[
+    {h:'Mood board',t:'Votre mood board',x:'Vos coups de cœur sauvegardés. Composez une routine à partir d\'eux.'},
+    {tab:'Annonces près',s:'#inspi-ann',t:'Annonces près de chez vous',x:'Modèles recherchés, offres et nouveautés des pros autour de vous.'}
+  ],
+  cartes:[
+    {h:'Mes commandes',t:'Vos commandes',x:'Les produits achetés en boutique, à retirer au RDV ou livrés.'},
+    {h:'Cartes reçues',t:'Cartes reçues',x:'Le solde et la date de validité de chaque carte.'},
+    {h:'Cartes offertes',t:'Cartes offertes',x:'Les cartes que vous avez offertes et leur utilisation.'},
+    {h:'J\'ai un code',t:'Ajouter une carte',x:'Saisissez le code reçu par e-mail.'}
+  ],
+  avis:[
+    {h:'En attente',t:'À noter',x:'Notez vos RDV terminés : votre retour aide la communauté.'},
+    {h:'Publiés',t:'Vos avis publiés',x:'La pro peut y répondre publiquement.'}
+  ],
+  messages:[
+    {s:'#v-messages .chatbox',t:'Vos conversations',x:'Écrivez à vos pros et envoyez une photo ou une vidéo (inspiration, résultat).'}
+  ],
+  profil:[
+    {tab:'Mes informations',h:'Informations',t:'Vos informations',x:'Nom, e-mail, téléphone et adresse pour les soins à domicile.'},
+    {tab:'Paiement',h:'Mes moyens de paiement',t:'Moyens de paiement',x:'Pour régler acomptes, paiements en ligne et commandes. Sécurisé par Stripe.'},
+    {tab:'Paiement',h:'Mes factures',t:'Vos factures',x:'Une facture par RDV terminé ou commande.'},
+    {tab:'Préférences',h:'Mes préférences',t:'Vos préférences',x:'Choisissez les notifications utiles, sans être noyée.'}
+  ]
+};
+
+/* ===== Guides « Voir le guide » v2 : une étape = un bloc de la page (data-g, sélecteur, titre ou onglet) ===== */
+(function(){
+  const G=window.TSV_GUIDES||{};
+  const css=document.createElement('style');css.id='tsv-guide2';
+  css.textContent=`
+.tsv-gbtn{border:1.5px solid #E2DDD7;background:#fff;color:#1A1A1A;border-radius:99px;padding:9px 14px;font:600 13px Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+.tsv-gbtn:hover{border-color:#2E7D5E;color:#2E7D5E}
+.tsv-ghl{outline:3px solid #2E7D5E !important;outline-offset:4px;border-radius:14px;box-shadow:0 0 0 9999px rgba(18,32,27,.28) !important;position:relative;z-index:60;transition:outline-color .2s}
+.tsv-gbox{position:fixed;right:22px;bottom:22px;width:340px;max-width:calc(100vw - 24px);background:#12201B;color:#fff;border-radius:20px;padding:16px 18px 14px;z-index:300;box-shadow:0 24px 60px rgba(0,0,0,.35);font-family:Inter,system-ui,sans-serif;display:none}
+.tsv-gbox.on{display:block}
+.tsv-gbox .k{font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#9FD3B9;font-weight:700}
+.tsv-gbox h4{font:700 18px 'Playfair Display',serif;margin:6px 0 4px;color:#fff}
+.tsv-gbox p{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.86);margin:0}
+.tsv-gbox .bar{display:flex;gap:4px;margin:12px 0}.tsv-gbox .bar i{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.18)}.tsv-gbox .bar i.on{background:#2E7D5E}
+.tsv-gbox .row{display:flex;gap:8px;justify-content:flex-end}
+.tsv-gbox button{border:0;border-radius:99px;padding:8px 14px;font:600 13px Inter,system-ui,sans-serif;cursor:pointer}
+.tsv-gbox .q{background:transparent;color:rgba(255,255,255,.7);margin-right:auto;padding-left:0}
+.tsv-gbox .p{background:rgba(255,255,255,.12);color:#fff}.tsv-gbox .n{background:#2E7D5E;color:#fff}
+@media (max-width:760px){.tsv-gbox{left:12px;right:12px;width:auto;bottom:calc(84px + env(safe-area-inset-bottom))}.top-actions{flex-wrap:wrap}.topbar{flex-wrap:wrap;gap:10px}}`;
+  document.head.appendChild(css);
+  const box=document.createElement('div');box.className='tsv-gbox';
+  box.innerHTML='<div class="k"></div><h4></h4><p></p><div class="bar"></div><div class="row"><button class="q">Quitter</button><button class="p">Précédent</button><button class="n">Suivant</button></div>';
+  document.body.appendChild(box);
+  let steps=[],i=0,sec=null;
+  const cur=()=>{const v=document.querySelector('section.view.on');return v?v.id.slice(2):null;};
+  function clickTab(t){const tb=[...sec.querySelectorAll('.tabs .tab,[data-sub],[data-asub],[data-tab]')].filter(b=>b.tagName==='BUTTON'||b.classList.contains('tab')).find(b=>b.textContent.trim().toLowerCase().startsWith(t.toLowerCase()));if(tb&&!tb.classList.contains('on'))tb.click();}
+  function find(st){
+    if(st.tab)clickTab(st.tab);
+    let el=null;
+    if(st.s)el=sec.querySelector(st.s)||document.querySelector(st.s);
+    if(!el&&st.h){const h=[...sec.querySelectorAll('h2,h3,.lb-h,.kicker')].find(x=>x.textContent.replace(/\s+/g,' ').trim().toLowerCase().startsWith(st.h.toLowerCase()));if(h)el=h.closest('.card,.rt-box')||h;}
+    if(!el&&st.g)el=document.querySelector('[data-g="'+st.g+'"]');
+    if(el&&el.offsetParent===null&&getComputedStyle(el).position!=='fixed')el=null;
+    return el;}
+  function clear(){document.querySelectorAll('.tsv-ghl').forEach(e=>e.classList.remove('tsv-ghl'));}
+  function show(){
+    const st=steps[i];clear();
+    box.querySelector('.k').textContent='Guide · étape '+(i+1)+' sur '+steps.length;
+    box.querySelector('h4').textContent=st.t;box.querySelector('p').textContent=st.x;
+    box.querySelector('.bar').innerHTML=steps.map((_,j)=>'<i class="'+(j<=i?'on':'')+'"></i>').join('');
+    box.querySelector('.p').style.visibility=i?'visible':'hidden';
+    box.querySelector('.n').textContent=i===steps.length-1?'Terminer':'Suivant';
+    box.classList.add('on');
+    setTimeout(()=>{const el=find(st);if(el){el.classList.add('tsv-ghl');el.scrollIntoView({behavior:'smooth',block:'center'});}},60);
+  }
+  function end(){box.classList.remove('on');clear();}
+  function start(v){steps=G[v]||[];sec=document.getElementById('v-'+v);if(!steps.length||!sec)return;i=0;show();}
+  box.querySelector('.q').onclick=end;
+  box.querySelector('.p').onclick=()=>{if(i>0){i--;show();}};
+  box.querySelector('.n').onclick=()=>{if(i<steps.length-1){i++;show();}else end();};
+  document.addEventListener('click',e=>{const b=e.target.closest('.js-guide');if(!b)return;e.preventDefault();e.stopImmediatePropagation();const s=b.closest('section.view');start(s?s.id.slice(2):cur());},true);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')end();});
+  // quitter le guide si on change de page
+  new MutationObserver(()=>{if(box.classList.contains('on')&&sec&&!sec.classList.contains('on'))end();}).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class']});
+  // bouton « Voir le guide » sur chaque page qui a un guide
+  Object.keys(G).forEach(v=>{const s=document.getElementById('v-'+v);if(!s||s.querySelector('.js-guide'))return;const tb=s.querySelector('.topbar');if(!tb)return;
+    const b=document.createElement('button');b.className=(window.TSV_GUIDE_BTN||'tsv-gbtn')+' js-guide';b.textContent='◎ Voir le guide';
+    const ta=tb.querySelector('.top-actions');if(ta)ta.prepend(b);else{const w=document.createElement('div');w.className='top-actions';w.style.cssText='display:flex;gap:8px;align-items:center;flex-wrap:wrap';const last=[...tb.children].slice(1);last.forEach(x=>w.appendChild(x));w.prepend(b);tb.appendChild(w);}});
 })();
 
 </script>
