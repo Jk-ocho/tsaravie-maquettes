@@ -214,7 +214,7 @@
   .chat-attach:hover{border-color:var(--bordeaux);}
   .chat-attach:hover svg{stroke:var(--bordeaux);}
   .pjprev{display:block;width:150px;height:95px;border-radius:10px;background:linear-gradient(135deg,var(--rose-pale),var(--gris-perle));margin-bottom:6px;position:relative;}
-  .pjprev.video::after{content:"▶";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--bordeaux);font-size:22px;}
+  .pjprev.video::after{content:"▶︎";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--bordeaux);font-size:22px;}
   .srctag{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:2.5px 7px;margin-left:7px;vertical-align:2px;display:inline-block;}
   .srctag.pb{background:var(--rose-pale);color:var(--bordeaux);}
   .srctag.ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);color:#fff;}
@@ -3135,7 +3135,7 @@
         return `<div class="lbp-card lbp-dispo"><h5>${dm==='slots'?'Il reste des places cette semaine':'Mes horaires d\'ouverture'}</h5>${D.map(d=>`<div class="lbp-day ${d[2]?'full':''}"><b>${d[0]}</b><span>${d[1]}</span></div>`).join('')}<button class="send" data-blk="resa">Réserver un créneau</button></div>`;}
       return `<div class="lbp-b ${b.main?'main':''}" data-blk="${b.id}"><span class="lb-ico" style="background:${b.bg}">${svg(b.ic)}</span><span class="t"><b>${b.t}</b><span>${b.s}</span></span><span class="ar">›</span></div>`;
     };
-    return `<div class="lbp"><div class="lbp-top">${logo?`<img class="lbp-logo" src="${logo}" alt="tsaravie">`:'<div style="font-family:Playfair Display,serif;font-weight:700;margin-bottom:12px">tsaravie</div>'}<button class="lbp-share" data-share title="Partager">↗</button>
+    return `<div class="lbp"><div class="lbp-top">${logo?`<img class="lbp-logo" src="${logo}" alt="tsaravie">`:'<div style="font-family:Playfair Display,serif;font-weight:700;margin-bottom:12px">tsaravie</div>'}<button class="lbp-share" data-share title="Partager">↗︎</button>
       <div class="lbp-av" style="${photo?`background-image:url(${photo});color:transparent`:''}">${ini()}</div>
       <div class="lbp-nom">${val('lb-nom')||'Votre nom'}</div><div class="lbp-met">${val('lb-metier')}</div><div class="lbp-bio">${val('lb-bio')}</div><div class="lbp-soc">${soc}</div></div>
       <div class="lbp-who"><h4>Vous êtes…</h4><div class="two"><button class="${who==='c'?'on':''}" data-who="c"><b>Un client</b><span>je réserve un soin</span></button><button class="${who==='p'?'on':''}" data-who="p"><b>Un pro</b><span>je rejoins tsaravie</span></button></div></div>
@@ -3692,7 +3692,7 @@ document.addEventListener('click',function(e){
       else{const v=k==='i'?0:+d.dataset[k];r.textContent=v?v+' RDV':'-';}});
     if(dl){const its=[...dl.querySelectorAll('.dl-item')];its.forEach(i=>i.style.display=(k==='all'||i.dataset.mb===k)?'':'none');const n=its.filter(i=>i.style.display!=='none').length;if(jt&&/Vendredi 3/.test(jt.textContent))jt.textContent='Vendredi 3 octobre · '+n+' rendez-vous'+(k==='all'?' pour toute l\'équipe':' avec '+MB[k].n);}
   }
-  if(bar){bar.insertAdjacentHTML('afterend',`<div class="chips only-team" id="cal-who" style="margin:-4px 0 12px;"><span class="sub" style="margin:0 6px 0 0;align-self:center">Agenda de :</span><button class="chip on" data-cw="all">Toute l'équipe</button>${['m','l','k','i'].map(k=>`<button class="chip" data-cw="${k}"><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${MB[k].c};margin-right:6px"></i>${MB[k].n}${k==='m'?' (moi)':''}</button>`).join('')}<button class="chip" data-cw="cols">Vue en colonnes ↗</button></div>`);
+  if(bar){bar.insertAdjacentHTML('afterend',`<div class="chips only-team" id="cal-who" style="margin:-4px 0 12px;"><span class="sub" style="margin:0 6px 0 0;align-self:center">Agenda de :</span><button class="chip on" data-cw="all">Toute l'équipe</button>${['m','l','k','i'].map(k=>`<button class="chip" data-cw="${k}"><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${MB[k].c};margin-right:6px"></i>${MB[k].n}${k==='m'?' (moi)':''}</button>`).join('')}<button class="chip" data-cw="cols">Vue en colonnes ↗︎</button></div>`);
     document.getElementById('cal-who').addEventListener('click',e=>{const b=e.target.closest('[data-cw]');if(!b)return;
       if(b.dataset.cw==='cols'){go('equipe');const t=document.querySelector('#tm-tabs [data-tt="agenda"]');if(t)t.click();return;}
       document.querySelectorAll('#cal-who .chip').forEach(x=>x.classList.toggle('on',x===b));apply(b.dataset.cw);
