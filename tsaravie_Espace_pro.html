@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8"><meta name="robots" content="noindex,nofollow">
+<head><meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>tsaravie · Maquette espace pro v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -467,6 +467,47 @@
   .lb-share button{border:1.5px solid var(--gris-perle);background:#fff;border-radius:12px;padding:12px;font-weight:600;font-size:13px;cursor:pointer;}
   @media (max-width:1100px){.lb-wrap{grid-template-columns:1fr;}.lb-right{position:static;}}
   @media (max-width:700px){.lb-f3{grid-template-columns:1fr;}.lb-kpis{grid-template-columns:repeat(2,1fr);}.lb-bar{grid-template-columns:110px 1fr 26px;}}
+
+.cc-ban{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:#870022;color:#fff;border-radius:18px;padding:14px 18px;margin:0 0 16px;border-top:3px solid #D4AF37}
+.cc-l{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1 1 300px}
+.cc-k{display:inline-flex;align-items:center;gap:7px;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:#F2D27A;font-weight:700}
+.cc-k i{width:6px;height:6px;border-radius:50%;background:#F2D27A;animation:ccp 2s infinite}
+@keyframes ccp{0%{box-shadow:0 0 0 0 rgba(242,210,122,.6)}70%{box-shadow:0 0 0 7px rgba(242,210,122,0)}100%{box-shadow:0 0 0 0 rgba(242,210,122,0)}}
+.cc-ban b{font-family:'Playfair Display',Georgia,serif;font-size:17px;line-height:1.25;font-weight:700;font-style:normal}
+.cc-cd{display:flex;align-items:baseline;gap:4px;flex-wrap:wrap;margin-top:4px}
+.cc-lab{font-size:12px;color:rgba(255,255,255,.8);margin-right:3px}
+.cc-u{display:inline-flex;align-items:baseline;gap:2px}.cc-u em{font-style:normal;font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:19px;line-height:1;font-variant-numeric:tabular-nums}
+.cc-u i{font-style:normal;font-size:10px;color:rgba(255,255,255,.7);text-transform:uppercase}.cc-sep{color:rgba(255,255,255,.35);font-size:14px}
+.cc-s{font-size:12.5px;color:rgba(255,255,255,.82);margin-top:3px;line-height:1.45}
+.cc-r{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.cc-btn{background:#fff;color:#870022;border:0;border-radius:999px;padding:9px 15px;font:700 13px Inter,Arial,sans-serif;cursor:pointer;text-decoration:none;white-space:nowrap}
+.cc-lk{color:#fff;font-size:12.5px;text-decoration:underline;background:none;border:0;cursor:pointer;font-family:Inter,Arial,sans-serif}
+@media (max-width:640px){.cc-ban{padding:11px 13px;gap:8px;border-radius:14px}.cc-ban b{font-size:14.5px}.cc-s,.cc-lab{display:none}.cc-u em{font-size:16px}.cc-r{width:100%}.cc-btn{flex:1;text-align:center;padding:8px 10px;font-size:12.5px}}
+
+.cc-stk{background:linear-gradient(150deg,#9A0A30 0%,#870022 45%,#4A0A1C 100%) !important;color:#fff;border:0 !important;text-align:center;padding:20px 18px 18px !important;position:relative;overflow:hidden}
+.cc-stk:before{content:"";position:absolute;inset:0;border-top:3px solid #D4AF37;border-radius:inherit;pointer-events:none}
+.cc-stk .cc-k{justify-content:center;color:#F2D27A}
+.cc-stk .stk-h{display:block;font-family:'Playfair Display',Georgia,serif;font-weight:700;font-style:normal;font-size:19px;line-height:1.25;margin:8px auto 14px;max-width:320px}
+.cc-stk .stk-cd{display:grid !important;grid-template-columns:repeat(4,1fr);gap:7px;margin:0 auto 14px;max-width:330px}
+.cc-stk .stk-t{display:flex;flex-direction:column;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:10px 0 7px}
+.cc-stk .stk-t em{font-style:normal;font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}
+.cc-stk .stk-t i{font-style:normal;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:5px}
+.cc-stk .stk-p{font-size:12.5px;line-height:1.5;color:rgba(255,255,255,.86);margin:0 auto 14px;max-width:340px}
+.cc-stk .stk-a{display:flex;flex-direction:column;align-items:center;gap:8px}
+.cc-stk .cc-btn{width:100%;max-width:300px;padding:11px 15px}
+
+.ccs-veil{position:fixed;inset:0;background:rgba(13,13,13,.45);z-index:9999;display:none;align-items:flex-end;justify-content:center}
+.ccs-veil.on{display:flex}@media (min-width:700px){.ccs-veil{align-items:center}}
+.ccs{background:#fff;border-radius:22px 22px 0 0;padding:20px 18px 18px;width:min(440px,100%);font-family:Inter,Arial,sans-serif;max-height:90vh;overflow:auto}
+@media (min-width:700px){.ccs{border-radius:22px}}
+.ccs h4{margin:0 0 4px;font:700 19px 'Playfair Display',Georgia,serif;color:#1A1A1A}.ccs .ccs-sub{font-size:12.5px;color:#6b6b6b;margin:0 0 12px}
+.ccs textarea{width:100%;box-sizing:border-box;border:1.5px solid #EDE4DA;border-radius:12px;padding:10px 12px;font:13px/1.45 Inter,Arial,sans-serif;resize:vertical;min-height:96px}
+.ccs-g{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 8px}
+.ccs-g button{border:1.5px solid #EDE4DA;background:#FBF8F5;border-radius:14px;padding:10px 4px;font:600 12px Inter,Arial,sans-serif;color:#1A1A1A;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px}
+.ccs-g button i{width:30px;height:30px;border-radius:50%;background:#870022;color:#fff;font-style:normal;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+.ccs-x{display:block;margin:6px auto 0;background:none;border:0;color:#8a837f;text-decoration:underline;cursor:pointer;font-size:12.5px}
+.ccs-toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:#1A1416;color:#fff;padding:10px 16px;border-radius:999px;font:13px Inter,Arial,sans-serif;z-index:10000;opacity:0;transition:opacity .25s;pointer-events:none;max-width:90vw;text-align:center}
+.ccs-toast.on{opacity:1}
   /* ===== Abonnement & parrainage ===== */
   #v-gains .stat .num{font-size:22px;}
   .ab-plan{display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--ivoire);border:1px solid var(--sable);border-radius:16px;padding:16px 18px;}
@@ -705,7 +746,7 @@
               <button class="btn-ghost" onclick="go('lienbio')">Mon lien bio à partager</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card cc-stk" id="cc-pdash"><span class="cc-k"><i></i>Concours de l'inspiration</span><b class="stk-h">Le concours a commencé</b><div class="cc-cd stk-cd"><span class="stk-t"><em data-u="d">23</em><i>jours</i></span><span class="stk-t"><em data-u="h">14</em><i>heures</i></span><span class="stk-t"><em data-u="m">08</em><i>min</i></span><span class="stk-t"><em data-u="s">32</em><i>sec</i></span></div><p class="stk-p">Vos clients ont fait une prestation chez vous ? Invitez-les à la publier sur tsaravie en vous taguant. Le look le plus liké gagne une carte cadeau de 100 €, et son pro est mis en avant sur la page Inspirations.</p><div class="stk-a"><button class="cc-btn js-cc-share">Partager le concours à mes clients</button><a class="cc-lk" href="tsaravie_Inspirations.html#classement">Voir le classement</a></div></div><div class="card">
             <div class="card-head"><div><h2>Alerte <em>créneaux</em></h2><div class="sub">3 clients attendent une place cette semaine.</div></div></div>
             <div class="sub" style="margin:0;">Une annulation ou un créneau ouvert = ils sont notifiés, votre agenda se remplit tout seul.</div>
           </div>
@@ -975,7 +1016,7 @@
         </div>
 
         <!-- Historique -->
-        <div class="subview on" id="r-histo">
+        <div class="subview on" id="r-histo"><div class="apercu" style="margin:0 0 12px">✦ Votre historique PlaniBeauty a été repris : 412 RDV et 186 clients, depuis votre inscription en 2023.</div>
           <div class="kpis">
             <div class="kpi"><div class="lab">RDV réalisés</div><div class="num">134</div></div>
             <div class="kpi"><div class="lab">Clients uniques</div><div class="num">27</div></div>
@@ -1398,7 +1439,7 @@
       <div class="topbar">
         <div><h1 class="hello">Mes <em>inspirations</em></h1><div class="hello-sub">Vos looks, publiés sur la page Inspirations du site · chaque look mène à la résa.</div></div>
         <div class="top-actions"><button class="btn-guide js-guide">◎ Voir le guide</button><button class="top-cta js-open-addinspi">+ Publier une inspiration</button></div>
-      </div>
+      </div><div class="cc-ban" id="cc-pinspi"><div class="cc-l"><span class="cc-k"><i></i>Concours de l'inspiration · mars-avril</span><b>Concours en cours : vos clients peuvent gagner une carte cadeau de 100 €</b><div class="cc-cd"><span class="cc-lab">Il reste</span><span class="cc-u"><em data-u="d">23</em><i>j</i></span><span class="cc-sep">:</span><span class="cc-u"><em data-u="h">14</em><i>h</i></span><span class="cc-sep">:</span><span class="cc-u"><em data-u="m">08</em><i>min</i></span><span class="cc-sep">:</span><span class="cc-u"><em data-u="s">32</em><i>s</i></span></div><span class="cc-s">Rappelez à vos clients de publier sur tsaravie les prestations faites chez vous, en vous taguant. Le look le plus liké gagne une carte cadeau de 100 €, et son pro est mis en avant (Pro du moment). Les pros ne participent pas au concours.</span></div><div class="cc-r"><button class="cc-btn js-cc-share">Partager le concours à mes clients</button><a class="cc-lk" href="tsaravie_Inspirations.html#classement">Voir le classement</a></div></div>
       <div class="grid">
         <div class="col">
           <div class="card" data-g="proinspi-0" style="margin-bottom:16px;">
@@ -1463,7 +1504,7 @@
             <div class="card-head"><div><h2>Encaissement <em>en ligne</em></h2><div class="sub">Acomptes et paiements en ligne passent par votre compte Stripe. Obligatoire pour « Acompte en ligne » et « Paiement total en ligne ».</div></div></div>
             <div class="srv" id="stripe-on"><span class="what"><b>Stripe connecté ✓</b><span>Compte acct_••••4821 · Mani By Mani · virements chaque lundi sur l'IBAN FR76 •••• 3310</span></span><span class="pill ok">Actif</span><button class="btn-ghost" id="stripe-manage">Gérer mon compte Stripe</button><button class="btn-ko" id="stripe-off">Déconnecter</button></div>
             <div class="srv hidden" id="stripe-none"><span class="what"><b>Aucun compte Stripe connecté</b><span>Création en 5 min : identité, IBAN, c'est tout. Les clients ne pourront pas payer en ligne tant que ce n'est pas fait.</span></span><span class="pill off">À faire</span><button class="btn-plain" id="stripe-connect">Connecter Stripe</button></div>
-            <div class="apercu">Frais Stripe : 1,5 % + 0,25 € par paiement en ligne · aucune commission tsaravie.</div>
+            <div class="apercu">Frais Stripe : 1,5 % + 0,25 € par paiement en ligne · aucune commission tsaravie.</div><div class="srv" style="margin-top:12px"><span class="what"><b>Versements de tsaravie</b><span>Quand un client paie avec sa cagnotte ou une carte cadeau gagnée à un jeu concours, tsaravie vous verse le montant directement sur ce compte Stripe, rattaché au RDV. En cas d'annulation dans le délai, le versement est annulé automatiquement. Rien à saisir, pas de RIB.</span></span><span class="pill ok">Via Stripe</span></div>
           </div>
         </div>
         <div class="col">
@@ -3347,7 +3388,21 @@
 })();
 
 </script>
-<script>
+<script id="cc-js">(function(){var end=Date.now()+((23*24+14)*3600+8*60+32)*1000;var p=function(n){return(n<10?'0':'')+n};
+function t(){var r=Math.max(0,end-Date.now())/1000,v={d:Math.floor(r/86400),h:p(Math.floor(r%86400/3600)),m:p(Math.floor(r%3600/60)),s:p(Math.floor(r%60))};
+document.querySelectorAll('.cc-cd [data-u]').forEach(function(e){e.textContent=v[e.dataset.u];});}t();setInterval(t,1000);})();</script><div class="ccs-veil" id="ccsVeil"><div class="ccs" role="dialog" aria-modal="true">
+<h4>Partager le concours</h4><p class="ccs-sub">Le message est prêt, vous pouvez le modifier avant de l'envoyer.</p>
+<textarea id="ccsMsg">Vous avez fait une prestation chez Mani By Mani ? Partagez votre look sur tsaravie, dans les Inspirations, en taguant Mani By Mani. L'inspiration la plus likée gagne une carte cadeau de 100 € ! Jeu gratuit, sans achat : tsaravie.fr/inspirations</textarea>
+<div class="ccs-g"><button data-ccs="copy"><i>⧉</i>Copier</button><button data-ccs="wa"><i>W</i>WhatsApp</button><button data-ccs="story"><i>◎</i>Story Instagram</button><button data-ccs="sms"><i>✉</i>SMS</button><button data-ccs="mail"><i>@</i>E-mail</button><button data-ccs="fb"><i>f</i>Facebook</button></div>
+<button class="ccs-x" id="ccsX">Fermer</button></div></div><div class="ccs-toast" id="ccsT"></div>
+<script id="ccs-js">(function(){var v=document.getElementById('ccsVeil'),T=document.getElementById('ccsT'),M=document.getElementById('ccsMsg');
+function t(m){T.textContent=m;T.classList.add('on');clearTimeout(t._);t._=setTimeout(function(){T.classList.remove('on')},2800);}
+var L={copy:'Message copié : collez-le où vous voulez',wa:'Ouverture de WhatsApp avec le message',story:'Visuel du concours prêt pour votre story Instagram, avec votre nom tagué',sms:'Ouverture de vos SMS avec le message',mail:'Ouverture de votre messagerie avec le message',fb:'Ouverture de Facebook avec le message'};
+document.addEventListener('click',function(e){
+ if(e.target.closest('.js-cc-share')){e.preventDefault();e.stopPropagation();v.classList.add('on');return;}
+ var b=e.target.closest('[data-ccs]');if(b){var k=b.dataset.ccs;if(k==='copy'&&navigator.clipboard)navigator.clipboard.writeText(M.value).catch(function(){});v.classList.remove('on');t(L[k]);return;}
+ if(e.target.id==='ccsX'||e.target===v)v.classList.remove('on');
+},true);})();</script><script>
 /* ===== Abonnement & parrainage ===== */
 (function(){
   const $=id=>document.getElementById(id);if(!$('ab-ov'))return;
@@ -3747,6 +3802,7 @@
   document.querySelectorAll('.js-shophist').forEach(b=>b.addEventListener('click',()=>{const n=document.querySelector('[data-view="revenus"]');if(n)n.click();setTimeout(()=>{const t=document.querySelector('#revtabs .tab[data-sub="boutique"]');if(t)t.click();},60);}));
 })();
 
+
 </script>
 <script>
 window.TSV_GUIDE_BTN='btn-guide';
@@ -3852,8 +3908,8 @@ window.TSV_GUIDES={
   gains:[
     {g:'gains-1',t:'Votre abonnement',x:'Formule, prochain prélèvement, économies grâce à l\'annuel et crédits de parrainage, en un coup d\'œil.'},
     {g:'gains-2',t:'Gérer ma formule',x:'Mensuel, annuel en une fois (−15 %) ou en 3 fois (−10 %) : changez de formule, arrêtez ou réactivez.'},
-    {h:'Offrir un abonnement',t:'Offrir un abonnement',x:'Offrez 1, 3 ou 6 mois à une pro : vous gagnez 30 % de son 1er mois payé après la période offerte.'},
-    {g:'gains-3',t:'Parrainez, gagnez',x:'−30 % sur le 1er mois pour la pro parrainée ; 30 % de son 2e mois plein tarif pour vous, remboursés quelques jours après votre prélèvement.'}
+    {h:'Offrir un abonnement',t:'Offrir un abonnement',x:'Offrez 1, 3 ou 6 mois à un ou une autre pro : vous gagnez 30 % de son 1er mois payé après la période offerte.'},
+    {g:'gains-3',t:'Parrainez, gagnez',x:'−30 % sur le 1er mois pour votre filleul ou filleule ; 30 % de son 2e mois plein tarif pour vous, remboursés quelques jours après votre prélèvement.'}
   ]
 };
 
