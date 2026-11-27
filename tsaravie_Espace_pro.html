@@ -1974,7 +1974,7 @@
           </div>
 
           <div class="card" data-g="gains-3" style="margin-top:16px;">
-            <div class="card-head"><div><h2>Mon code de <em>parrainage</em></h2><div class="sub">La pro que vous parrainez a <b>−30 % sur son 1er mois</b>. Quand elle paie son <b>2e mois plein tarif</b>, vous gagnez <b>30 % de ce mois</b> en crédit.</div></div></div>
+            <div class="card-head"><div><h2>Mon code de <em>parrainage</em></h2><div class="sub">Le ou la pro que vous parrainez a <b>−30 % sur son 1er mois</b>. Quand elle paie son <b>2e mois plein tarif</b>, vous gagnez <b>30 % de ce mois</b> en crédit.</div></div></div>
             <div style="display:flex;gap:10px;align-items:center;background:var(--noir);color:var(--ivoire);border-radius:14px;padding:14px 18px;margin-bottom:12px;">
               <span style="font-weight:700;letter-spacing:.14em;font-size:15px;flex:1;">TSARA-MANI30</span>
               <button class="btn-guide js-copy-code" style="background:var(--ivoire);">Copier</button>
@@ -3013,7 +3013,7 @@
     gains:[
       {g:'gains-1',t:'Votre abonnement',x:'Formule, prochain prélèvement, économies grâce à l\'annuel et crédits de parrainage, en un coup d\'œil.'},
       {g:'gains-2',t:'Gérer ma formule',x:'Mensuel ou annuel, changer de formule, arrêter ou réactiver. Vos virements clients sont dans Historique & revenus.'},
-      {g:'gains-3',t:'Parrainez, gagnez',x:'−30 % sur le 1er mois pour la pro parrainée ; 30 % de son 2e mois plein tarif pour vous, remboursés quelques jours après votre prélèvement.'}
+      {g:'gains-3',t:'Parrainez, gagnez',x:'−30 % sur le 1er mois pour le ou la pro parrainé(e) ; 30 % de son 2e mois plein tarif pour vous, remboursés quelques jours après votre prélèvement.'}
     ]
   };
   const gbox=document.getElementById('guide');
@@ -3130,7 +3130,7 @@
     const vis=B.filter(b=>b.on&&(b.a==='t'||b.a===who));
     const soc=[['ig','lb-ig'],['tt','lb-tt'],['fb','lb-fb']].filter(s=>val(s[1])).map(s=>`<span>${svg(s[0])}</span>`).join('');
     const blk=b=>{
-      if(b.id==='chat')return `<div class="lbp-b dark" data-chat><span class="lb-ico" style="background:rgba(255,255,255,.14)">${svg(b.ic)}</span><span class="t"><b>Écrire à ${val('lb-nom')||'la pro'}</b><span>Dans la messagerie tsaravie : photos, questions, devis</span></span><span class="ar">›</span></div>`;
+      if(b.id==='chat')return `<div class="lbp-b dark" data-chat><span class="lb-ico" style="background:rgba(255,255,255,.14)">${svg(b.ic)}</span><span class="t"><b>Écrire à ${val('lb-nom')||'votre pro'}</b><span>Dans la messagerie tsaravie : photos, questions, devis</span></span><span class="ar">›</span></div>`;
       if(b.id==='dispo'){const D=dm==='slots'?[['Mar.','<em>2</em> · 11 h, 16 h 30'],['Mer.','complet',1],['Jeu.','<em>3</em> · 9 h 30, 14 h, 17 h'],['Ven.','complet',1],['Sam.','<em>2</em> · 10 h, 15 h 30']]:[['Mar.','10 h à 19 h'],['Mer.','10 h à 19 h'],['Jeu.','10 h à 19 h'],['Ven.','10 h à 19 h'],['Sam.','10 h à 18 h']];
         return `<div class="lbp-card lbp-dispo"><h5>${dm==='slots'?'Il reste des places cette semaine':'Mes horaires d\'ouverture'}</h5>${D.map(d=>`<div class="lbp-day ${d[2]?'full':''}"><b>${d[0]}</b><span>${d[1]}</span></div>`).join('')}<button class="send" data-blk="resa">Réserver un créneau</button></div>`;}
       return `<div class="lbp-b ${b.main?'main':''}" data-blk="${b.id}"><span class="lb-ico" style="background:${b.bg}">${svg(b.ic)}</span><span class="t"><b>${b.t}</b><span>${b.s}</span></span><span class="ar">›</span></div>`;
