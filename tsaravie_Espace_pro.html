@@ -659,7 +659,7 @@
     .more-grid .dot{position:absolute;top:8px;right:10px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:var(--bordeaux);color:#fff;font-size:9.5px;font-weight:700;display:flex;align-items:center;justify-content:center;}
   }
 </style>
-</head>
+<style>.avp-box{display:flex;gap:12px;margin-top:10px;padding:10px;border:1.5px dashed #E4D3C1;border-radius:14px;background:#FBF8F5;width:100%;box-sizing:border-box}.avp-img{flex:none;width:76px;height:76px;border-radius:10px;background:center/cover no-repeat}.avp-q{display:flex;flex-direction:column;gap:6px;font-size:12.5px;min-width:0}.avp-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.avp-sel{border:1.5px solid #EDE4DA;border-radius:10px;padding:5px 8px;font:12.5px Inter,Arial,sans-serif;max-width:60%}.avp-btns{justify-content:flex-start !important;flex-wrap:wrap}.avp-ok{border:0;background:#2E7D5E;color:#fff;border-radius:999px;padding:7px 14px;font:700 12.5px Inter,Arial,sans-serif;cursor:pointer}.avp-no,.avp-undo{border:1.5px solid #EDE4DA;background:#fff;border-radius:999px;padding:6px 12px;font:600 12.5px Inter,Arial,sans-serif;cursor:pointer}.avp-t{border:1.5px solid #EDE4DA;background:#fff;border-radius:999px;padding:5px 14px;font:700 12px Inter,Arial,sans-serif;cursor:pointer;flex:none}.avp-t.on{background:#2E7D5E;border-color:#2E7D5E;color:#fff}.avp-t:disabled{opacity:.45;cursor:default}.av-photo .what{flex:1 1 100% !important;display:block !important}.av-photo .what>span{display:block}@media (max-width:640px){.avp-box{flex-direction:column}.avp-img{width:100%;height:140px}.avp-q{font-size:13px}}</style></head>
 <body>
 
   <aside class="sidebar">
@@ -1529,7 +1529,7 @@
         <div id="routine-on">
           <div class="field"><label>Prestations incluses dans ma routine</label></div>
           <div class="chips" style="margin-bottom:10px;"><button class="chip multi on">Pose semi-permanent</button><button class="chip multi on">Nail art signature</button><button class="chip multi on">Pose gel + capsules</button><button class="chip multi">Drainage lymphatique</button><button class="chip multi">Cours auto-manucure</button></div>
-          <div class="apercu">Côté client : vos soins inclus sont proposés dans « Ma routine », et « <b>✦ −10 % sur l'ensemble</b> » s'applique dès que la routine compte au moins 2 pros. Ce mois : 7 routines réservées (19 RDV), 31 € de remise accordés, 412 € de chiffre d'affaires en plus, 4 nouveaux clients.</div>
+          <div class="apercu">Côté client : vos soins inclus sont proposés dans « Ma routine », et « <b>✦ −10 % sur l'ensemble</b> » s'applique dès que la routine compte au moins 3 pros (4 maximum). Ce mois : 7 routines réservées (19 RDV), 31 € de remise accordés, 412 € de chiffre d'affaires en plus, 4 nouveaux clients.</div>
         </div>
         <div id="routine-off" class="hidden"><div class="apercu">Vous ne participez pas : vos soins restent réservables normalement, sans remise et sans mise en avant dans Ma routine.</div></div>
       </div>
@@ -1600,7 +1600,7 @@
       <div class="card" data-g="avis-2">
         <div class="card-head"><div><h2>Derniers <em>avis</em></h2><div class="sub">Votre réponse s'affiche publiquement sous l'avis.</div></div></div>
 
-        <div class="rdv" style="align-items:flex-start;flex-wrap:wrap;">
+        <div class="rdv av-photo" style="align-items:flex-start;flex-wrap:wrap;"><span class="pp">SL</span><span class="what" style="flex:1;min-width:0"><b>Sarah L. <span style="color:var(--or);">★★★★★</span> <span class="pill wait">Photo à valider</span></b><span>« Nail art parfait pour mon mariage, merci ! » · Nail art signature · aujourd'hui</span><span class="avp-box"><i class="avp-img" style="background-image:url(data:image/webp;base64,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)"></i><span class="avp-q"><b>Votre cliente a joint une photo.</b> Rien n'est publié sans votre accord. Si vous acceptez, elle est rattachée à la prestation, publiée avec l'avis et dans les inspirations (les vôtres et celles de votre cliente).<span class="avp-row"><span>Prestation</span><select class="avp-sel"><option>Nail art signature</option><option>Pose semi-permanent</option><option>Gainage</option><option>Extensions capsules</option></select></span><span class="avp-row avp-btns"><button class="avp-ok">Accepter et publier</button><button class="avp-no">Garder privée</button></span></span></span></span></span></span></div><div class="rdv" style="align-items:flex-start;flex-wrap:wrap;">
           <span class="pp">JD</span>
           <span class="what" style="flex:1;"><b>Julie D. <span style="color:var(--or);">★★★★★</span> <span class="pill wait">Nouveau</span></b>
             <span>« Nail art sublime, Mani est adorable et très minutieuse. Je recommande les yeux fermés ✦ » · Nail art signature · hier</span>
@@ -3805,6 +3805,57 @@ document.addEventListener('click',function(e){
 
 </script>
 <script>
+/* ===== Boutons sans effet : comportement minimal crédible (maquette) ===== */
+(function(){
+  function toast(m){
+    var t=document.getElementById('toast'),x=document.getElementById('toast-txt');
+    if(t&&x){x.textContent=m;t.classList.add('show');clearTimeout(t._t6);t._t6=setTimeout(function(){t.classList.remove('show');},3000);return;}
+    alert(m);
+  }
+  function txt(b){return (b.textContent||'').replace(/\s+/g,' ').trim();}
+  function pill(row,cls,label){var p=row.querySelector('.pill');if(!p){p=document.createElement('span');row.insertBefore(p,row.querySelector('button'));}p.className='pill '+cls;p.textContent=label;}
+  function askTrack(cb){
+    var v=document.createElement('div');v.className='app6-veil';
+    v.innerHTML='<div class="app6-box"><h3>Expédier la commande</h3><p>Ajoutez le numéro de suivi si vous l\'avez : votre cliente le reçoit par e-mail.</p><input placeholder="N° de suivi (facultatif)"><div class="app6-act"><button class="btn-plain app6-ok">Marquer expédiée</button><button class="btn-ghost app6-x">Annuler</button></div></div>';
+    document.body.appendChild(v);
+    v.addEventListener('click',function(e){if(e.target.closest('.app6-ok')){var n=v.querySelector('input').value.trim();v.remove();cb(n);}else if(e.target===v||e.target.closest('.app6-x'))v.remove();});
+    setTimeout(function(){v.querySelector('input').focus();},50);
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('button');if(!b||b.id||b.closest('.app6-veil'))return;
+    var t=txt(b),row=b.closest('.rdv,.srv,.rs');
+    var done=function(){e.preventDefault();e.stopImmediatePropagation();};
+    if(/^Enregistrer ma semaine type/.test(t)){done();toast('Semaine type enregistrée : vos créneaux sont à jour');return;}
+    if(/^Ouvrir( novembre)?$/.test(t)&&row&&row.querySelector('.pill.off')){done();var m=(row.querySelector('.what b')||{}).textContent||'Ce mois';pill(row,'ok','Ouvert');var sp=row.querySelector('.what span');if(sp)sp.textContent='Visible par vos clients';b.remove();toast(m+' ouvert : les clients avec une alerte sont prévenus');return;}
+    if(t==='Préparée'&&row){done();pill(row,'ok','Prête');b.remove();toast('Commande prête : votre cliente est prévenue, elle la récupère à son prochain RDV');return;}
+    if(t==='Expédier'&&row){done();askTrack(function(n){pill(row,'ok','Expédiée');b.remove();toast('Commande expédiée'+(n?' · suivi '+n:'')+' : votre cliente est prévenue par e-mail');});return;}
+    if(t==='Déconnecter'&&row&&row.classList.contains('rs')){done();var p=row.querySelector('.pill');if(p){p.className='pill off';p.textContent='Déconnecté';}var tg=row.querySelector('.toggle input');if(tg)tg.checked=false;b.textContent='Reconnecter';b.className='btn-vert';toast('Compte déconnecté : vos vidéos déjà reliées restent visibles');return;}
+    if(t==='Reconnecter'&&row){done();var p2=row.querySelector('.pill');if(p2){p2.className='pill ok';p2.textContent='Connecté';}b.textContent='Déconnecter';b.className='btn-ko';toast('Compte reconnecté');return;}
+    if(t==='Relier mes vidéos'){done();var card=b.closest('.card');var n=0;if(card)card.querySelectorAll('.srv .pill').forEach(function(x){if(!/ok/.test(x.className)){x.className='pill ok';x.textContent='Reliée';n++;}});toast(n?n+' vidéo'+(n>1?'s':'')+' reliée'+(n>1?'s':'')+' à vos prestations':'Vos vidéos sont reliées à vos prestations : vos clients réservent depuis le reel');return;}
+    if(t==='Republier'){done();var art=b.closest('article');if(art){var d=art.querySelector('.odate');if(d)d.textContent="à l'instant";var par=art.parentNode;if(par)par.insertBefore(art,par.firstChild);b.textContent='Republiée ✓';b.disabled=true;}toast('Republiée : elle remonte en tête et vos abonnés sont prévenus');return;}
+    if(/^\+ Ajouter une variante$/.test(t)){done();var wrap=b.previousElementSibling;var last=wrap&&wrap.querySelector('.f-row:last-child');if(last){var r=last.cloneNode(true);r.querySelectorAll('input').forEach(function(i,k){i.value='';i.placeholder=['Nom de la variante','Durée','Prix'][k]||'';});wrap.appendChild(r);var f=r.querySelector('input');if(f)f.focus();}toast('Variante ajoutée : renseignez le nom, la durée et le prix');return;}
+    if(t==='Refuser'&&row&&row.querySelector('.js-confirm')){done();pill(row,'off','Refusée');row.querySelectorAll('button').forEach(function(x){x.remove();});toast('Demande refusée : votre cliente est prévenue, rien ne lui est débité');return;}
+    var nav=b.closest('.cal-nav');
+    if(nav&&(t==='‹'||t==='›')){done();var lab=nav.querySelector('span');var k=(+nav.dataset.k||0)+(t==='›'?1:-1);nav.dataset.k=k;
+      var M=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'],J=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],MM=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+      if(!nav.dataset.base){var tx=lab.textContent;nav.dataset.base=tx;}
+      var base=nav.dataset.base,dt;
+      if(/^Semaine du 29 sept/.test(base)){dt=new Date(2026,8,29+7*k);var e2=new Date(dt.getTime()+6*864e5);lab.textContent='Semaine du '+dt.getDate()+' '+M[dt.getMonth()]+' – '+e2.getDate()+' '+M[e2.getMonth()];}
+      else if(/^Semaine du 6 au 12/.test(base)){dt=new Date(2026,9,6+7*k);var e3=new Date(dt.getTime()+6*864e5);lab.textContent='Semaine du '+dt.getDate()+' au '+e3.getDate()+' '+M[e3.getMonth()];}
+      else if(/^Samedi 29 novembre/.test(base)){dt=new Date(2026,10,29+k);lab.textContent=J[dt.getDay()]+' '+dt.getDate()+' '+MM[dt.getMonth()];}
+      return;}
+    if((t==='‹'||t==='›')&&b.classList.contains('btn-ko')){var info=b.closest('.sub');var sp=info&&info.querySelector('span');if(sp){var m2=sp.textContent.match(/(\d+) à (\d+) sur (\d+)/);if(m2){var a1=+m2[1],a2=+m2[2],tot=+m2[3],step=a2-a1+1;var na=Math.max(1,Math.min(tot-step+1,a1+(t==='›'?step:-step)));done();sp.textContent=sp.textContent.replace(m2[0],na+' à '+(na+step-1)+' sur '+tot);toast(t==='›'?'Page suivante':'Page précédente');return;}}}
+    if(t==='+ Ajouter une heure'&&b.classList.contains('slot')){done();var ns=document.createElement('button');ns.className='slot on';ns.textContent='12 h 00';b.parentNode.insertBefore(ns,b);toast('Créneau de 12 h 00 ajouté à cette journée');return;}
+    if(t==='✕'&&row&&row.querySelector('.pill')){done();row.remove();toast('Exception supprimée : la semaine type s\'applique à nouveau ce jour-là');return;}
+    if(t==='Modifier'&&b.classList.contains('octa')){done();var art=b.closest('article');var ti=art&&art.querySelector('.otitle');var v=document.createElement('div');v.className='app6-veil';v.innerHTML='<div class="app6-box"><h3>Modifier la formation</h3><p>Titre, date, places et prix : vos inscrits sont prévenus si la date change.</p><input class="app6-ti"><div class="app6-act"><button class="btn-plain app6-ok">Enregistrer</button><button class="btn-ghost app6-x">Annuler</button></div></div>';document.body.appendChild(v);var inp=v.querySelector('.app6-ti');inp.value=ti?ti.textContent.trim():'';v.addEventListener('click',function(ev){if(ev.target.closest('.app6-ok')){if(ti&&inp.value.trim())ti.textContent=inp.value.trim();v.remove();toast('Formation mise à jour');}else if(ev.target===v||ev.target.closest('.app6-x'))v.remove();});return;}
+  },true);
+  var st=document.createElement('style');
+  st.textContent='.app6-veil{position:fixed;inset:0;background:rgba(13,13,13,.45);z-index:99999;display:flex;align-items:center;justify-content:center;padding:16px}.app6-box{background:#fff;border-radius:20px;padding:20px;width:min(400px,100%);font-family:Inter,Arial,sans-serif}.app6-box h3{margin:0 0 6px;font:700 19px "Playfair Display",Georgia,serif}.app6-box p{margin:0 0 12px;font-size:13px;color:#6b6b6b}.app6-box input{width:100%;box-sizing:border-box;border:1.5px solid #EDE4DA;border-radius:12px;padding:10px 12px;font:14px Inter,Arial,sans-serif}.app6-act{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}';
+  document.head.appendChild(st);
+})();
+
+</script>
+<script>
 window.TSV_GUIDE_BTN='btn-guide';
 window.TSV_GUIDES={
   dash:[
@@ -3974,5 +4025,5 @@ window.TSV_GUIDES={
 })();
 
 </script>
-</body>
+<script>document.addEventListener("click",function(e){var ok=e.target.closest(".avp-ok"),no=e.target.closest(".avp-no");if(!ok&&!no)return;var box=e.target.closest(".av-photo");if(!box._h)box._h=box.querySelector(".avp-q").innerHTML;var p=box.querySelector(".pill"),q=box.querySelector(".avp-q"),pr=box.querySelector(".avp-sel").value;if(ok){p.className="pill ok";p.textContent="Photo publiée";q.innerHTML="<b>Photo publiée</b> avec l’avis, rattachée à <b>"+pr+"</b>, sur votre page et dans les inspirations (les vôtres et celles de Sarah L.). <button class='avp-undo'>Retirer</button>";}else{p.className="pill";p.textContent="Photo privée";q.innerHTML="<b>Photo gardée privée</b> : seul l’avis texte est publié. <button class='avp-undo'>Changer d’avis</button>";}},true);document.addEventListener("click",function(e){var u=e.target.closest(".avp-undo");if(!u)return;var box=u.closest(".av-photo");box.querySelector(".avp-q").innerHTML=box._h;var p=box.querySelector(".pill");p.className="pill wait";p.textContent="Photo à valider";},true);</script></body>
 </html>
